@@ -1,0 +1,54 @@
+{
+    "testExample": "Test Example",
+    "routes": {
+        "schedule": "Schedule",
+        "profile": "Profile"
+    },
+    "createDrawerLesson":{
+      "cancelButton": "Cancel",
+      "title": "Adding lesson",
+      "location": "Location",
+      "saveButton": "Save", 
+      "locationPlaceholder": "Kronversky 14, 1444 room",
+      "lessonName": "Name of the class",
+      "lessonNamePlaceholder": "BLPS/OPD/Rubezh",
+      "chooseGroup": "Choose group",
+      "selectedGroups": "Current selected groups",
+      "planningTime": "Planning of lesson time",
+      "reloadFreeTime": "Reload free time for current groups",
+      "messages":{
+        "requiredTime": "Fill the time",
+        "requiredName": "Fill the name",
+        "requiredGroup": "Choose 1 or more group",
+        "requiredLocationOrLink": "Fill in at least an address or a link"
+      },
+      "zoomLink": "Zoom link",
+      "zoomLinkPlaceholder": "https://itmo.zoom.us/"
+    },
+    "day":{
+      "addDopButton": "Add lesson",
+      "indalidDateTitle": "Invalid date",
+      "invalidDateDescription": "Correct your date. Example: 2024-04-29"
+    },
+    "header": {
+      "logout": "Logout"
+   },
+   "lessonsList":{
+    "emptyList": "No any lessons"
+  },
+   "lessonCard":{
+     "group": "Group: {{group}}",
+     "time": "Time: {{startTime}}-{{endTime}}",
+     "place": "Place: {{place}}"
+   },
+    "auth":{
+      "messages":{
+        "requiredUsername": "Username is required",
+        "requiredPassword": "Password is required",
+        "error": "Failed authorization. Correct your login or password"
+      },
+        "buttons":{
+          "login": "Login"
+        }
+      }
+   }

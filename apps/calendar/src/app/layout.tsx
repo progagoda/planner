@@ -8,9 +8,10 @@ export const metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
+  'use client'
   return (
     <html lang="en">
       <body>

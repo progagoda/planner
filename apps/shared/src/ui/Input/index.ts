@@ -1,0 +1,1 @@
+export {FormInput,FormPassword, Input} from './Input';
