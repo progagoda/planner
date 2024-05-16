@@ -1,7 +1,6 @@
 import { Calendar } from "@shared/ui"
 
 
-export const TestList = ()=> {
-   const test = 'test'||'test'
+export const TestList = () => {
    return <Calendar fullscreen/>
 }
