@@ -5,31 +5,66 @@ on:
     branches:
       - main
   pull_request:
+      branches: [ main ]
 
 permissions:
   actions: read
   contents: read
 
 jobs:
-  main:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      # Connect your workspace on nx.app and uncomment this to enable task distribution.
-      # The "--stop-agents-after" is optional, but allows idle agents to shut down once the "e2e-ci" targets have been requested
-      # - run: npx nx-cloud start-ci-run --distribute-on="5 linux-medium-js" --stop-agents-after="e2e-ci"
-
       # Cache node_modules
       - uses: actions/setup-node@v3
         with:
           node-version: 20
           cache: 'npm'
-      - run: npm ci
-      - uses: nrwl/nx-set-shas@v4
-
-      # Prepend any command with "nx-cloud record --" to record its logs to Nx Cloud
-      # - run: npx nx-cloud record -- echo Hello World
-      - run: npx nx affected -t lint test build e2e-ci
+      - name: Restore cached npm dependencies
+        uses: actions/cache/restore@v3
+        with:
+          path: |
+            node_modules
+            ~/.cache/Cypress # needed for the Cypress binary
+          key: npm-dependencies-${{ hashFiles('package-lock.json') }}
+      - run: npm i
+      - name: Cache npm dependencies
+        uses: actions/cache/save@v3
+        with:
+          path: |
+            node_modules
+            ~/.cache/Cypress # needed for the Cypress binary
+          key: npm-dependencies-${{ hashFiles('package-lock.json') }}
+      - run: npx nx affected -t lint,test --base=origin/main~1 --head=origin/main --parallel=3
+  e2e:
+    needs: main
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+  steps:
+        - uses: actions/checkout@v4
+          with:
+            fetch-depth: 0
+        # Cache node_modules
+        - uses: actions/setup-node@v3
+          with:
+            node-version: 20
+            cache: 'npm'
+        - name: Restore cached npm dependencies
+          uses: actions/cache/restore@v3
+          with:
+            path: |
+              node_modules
+              ~/.cache/Cypress # needed for the Cypress binary
+            key: npm-dependencies-${{ hashFiles('package-lock.json') }}
+        - run: npm i
+        - name: Cache npm dependencies
+          uses: actions/cache/save@v3
+          with:
+            path: |
+              node_modules
+              ~/.cache/Cypress # needed for the Cypress binary
+            key: npm-dependencies-${{ hashFiles('package-lock.json') }}
+        - run: npx nx run calendar-e2e:e2e 
