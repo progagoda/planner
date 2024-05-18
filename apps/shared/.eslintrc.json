@@ -1,6 +1,6 @@
 {
-  "extends": ["plugin:@nx/react", "../../.eslintrc.json"],
-  "ignorePatterns": ["!**/*", "storybook-static"],
+  "extends": ["plugin:@nx/react", "../../.eslintrc.json",  "plugin:i18next/recommended"],
+  "ignorePatterns": ["!**/*", "storybook-static", "node_modules"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
@@ -14,5 +14,6 @@
       "files": ["*.js", "*.jsx"],
       "rules": {}
     }
-  ]
+  ],
+  "plugins": ["i18next"]
 }
