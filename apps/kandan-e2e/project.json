@@ -1,9 +1,0 @@
-{
-  "name": "kandan-e2e",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/kandan-e2e/src",
-  "tags": [],
-  "implicitDependencies": ["kandan"],
-  "// targets": "to see all targets run: nx show project kandan-e2e --web",
-  "targets": {}
-}

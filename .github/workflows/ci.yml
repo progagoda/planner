@@ -40,7 +40,7 @@ jobs:
           key: npm-dependencies-${{ hashFiles('package-lock.json') }}
       - run: npx nx affected -t lint,test --base=origin/main~1 --head=origin/main --parallel=3
   e2e:
-    needs: main
+    needs: lint
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -67,4 +67,4 @@ jobs:
               node_modules
               ~/.cache/Cypress # needed for the Cypress binary
             key: npm-dependencies-${{ hashFiles('package-lock.json') }}
-        - run: npx nx run kandan-e2e:e2e 
+        - run: npx nx run task-manager-e2e:e2e 

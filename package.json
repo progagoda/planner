@@ -63,7 +63,7 @@
     "@swc/plugin-styled-components": "^1.5.67",
     "@testing-library/dom": "^9.3.4",
     "@testing-library/jest-dom": "^6.4.2",
-    "@testing-library/react": "14.0.0",
+    "@testing-library/react": "15.0.6",
     "@types/antd": "^1.0.0",
     "@types/jest": "^29.4.0",
     "@types/lodash": "^4.14.202",

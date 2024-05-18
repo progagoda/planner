@@ -1,0 +1,9 @@
+{
+  "name": "task-manager-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/task-manager/task-manager-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["task-manager"],
+  "// targets": "to see all targets run: nx show project task-manager-e2e --web",
+  "targets": {}
+}
