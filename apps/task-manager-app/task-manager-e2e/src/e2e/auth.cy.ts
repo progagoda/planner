@@ -1,5 +1,3 @@
-import { getGreeting } from '../support/app.po';
-
 describe('calendar-e2e', () => {
   beforeEach(() => cy.visit('/auth'));
 
