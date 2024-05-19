@@ -1,9 +1,0 @@
-{
-  "name": "task-manager",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/task-manager/task-manager",
-  "projectType": "application",
-  "tags": ["task-manager"],
-  "// targets": "to see all targets run: nx show project task-manager --web",
-  "targets": {}
-}
