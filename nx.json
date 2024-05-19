@@ -71,16 +71,47 @@
       }
     }
   ],
+  "defaultProject": "planner",
   "generators": {
     "@nx/next": {
       "application": {
         "style": "styled-components",
-        "linter": "eslint"
+        "linter": "eslint",
+        "bundler": "webpack"
       }
     },
-    "@nx/react": {
-      "library": {}
+    "component": {
+      "style": "styled-components"
+    },
+    "library": {
+      "style": "styled-components",
+      "linter": "eslint",
+      "unitTestRunner": "vitest"
     }
   },
-  "nxCloudAccessToken": "MmU3OTg5YTQtZGExOC00NmQ1LTg3YjItMDY5N2M1MDU1N2MxfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "MmU3OTg5YTQtZGExOC00NmQ1LTg3YjItMDY5N2M1MDU1N2MxfHJlYWQtd3JpdGU=",
+  "targetDefaults": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "{projectRoot}/dist",
+        "{projectRoot}/build",
+        "{projectRoot}/public/build"
+      ]
+    },
+    "@nx/js:tsc": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    }
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "options": {
+        "cacheableOperations": ["build-storybook"]
+      }
+    }
+  }
 }

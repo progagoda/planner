@@ -1,5 +1,5 @@
 {
-  "extends": "../../tsconfig.base.json",
+  "extends": "../../../tsconfig.base.json",
   "compilerOptions": {
     "jsx": "preserve",
     "allowJs": true,
@@ -26,10 +26,14 @@
     "**/*.tsx",
     "**/*.js",
     "**/*.jsx",
-    "../../apps/calendar/.next/types/**/*.ts",
-    "../../dist/apps/calendar/.next/types/**/*.ts",
+    "../../../apps/task-manager/task-manager/.next/types/**/*.ts",
+    "../../../dist/apps/task-manager/task-manager/.next/types/**/*.ts",
     "next-env.d.ts",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "../../../apps/task-manager/.next/.next/types/**/*.ts",
+    "../../../apps/task-manager-app/task-manager/.next/.next/types/**/*.ts",
+    "../../../dist/apps/task-manager-app/task-manager/.next/.next/types/**/*.ts",
+    "../../../dist/apps/task-manager-app/task-manager/.next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules",

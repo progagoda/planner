@@ -1,6 +1,6 @@
 import { getGreeting } from '../support/app.po';
 
-describe('calendar-e2e', () => {
+describe('task-manager-e2e', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {
