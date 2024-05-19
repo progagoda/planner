@@ -57,7 +57,6 @@ jobs:
           with:
             path: |
               node_modules
-              ~/.cache/Cypress # needed for the Cypress binary
             key: npm-dependencies-${{ hashFiles('package-lock.json') }}
         - run: npm i
         - name: Cache npm dependencies
@@ -65,6 +64,5 @@ jobs:
           with:
             path: |
               node_modules
-              ~/.cache/Cypress # needed for the Cypress binary
             key: npm-dependencies-${{ hashFiles('package-lock.json') }}
         - run: npx nx run task-manager-e2e:e2e 
