@@ -1,4 +1,4 @@
-describe('calendar-e2e', () => {
+describe('task-manager', () => {
   beforeEach(() => cy.visit('/auth'));
 
   it('check', () => {
