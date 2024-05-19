@@ -19,10 +19,10 @@
       },
       "configurations": {
         "development": {
-          "outputPath": "apps/task-manager-app/task-manager/.next" 
+          "outputPath": "dist/apps/task-manager-app/task-manager" 
         },
         "production": {
-          "outputPath": "apps/task-manager-app/task-manager/.next"
+          "outputPath": "dist/apps/task-manager-app/task-manager"
         }
       }
     },
