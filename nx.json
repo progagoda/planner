@@ -69,6 +69,12 @@
         "testStorybookTargetName": "test-storybook",
         "staticStorybookTargetName": "static-storybook"
       }
+    },
+    {
+      "plugin": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
     }
   ],
   "defaultProject": "planner",
@@ -92,14 +98,8 @@
   "nxCloudAccessToken": "MmU3OTg5YTQtZGExOC00NmQ1LTg3YjItMDY5N2M1MDU1N2MxfHJlYWQtd3JpdGU=",
   "targetDefaults": {
     "build": {
-      "dependsOn": [
-        "^build"
-      ],
-      "outputs": [
-        "{projectRoot}/dist",
-        "{projectRoot}/build",
-        "{projectRoot}/public/build"
-      ]
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/dist", "{projectRoot}/build", "{projectRoot}/public/build"]
     },
     "@nx/js:tsc": {
       "cache": true,

@@ -3,6 +3,7 @@
   "compilerOptions": {
     "jsx": "preserve",
     "allowJs": true,
+    "baseUrl": ".",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
@@ -16,6 +17,15 @@
         "name": "next"
       }
     ],
+    "paths": {
+      "@/*": ["src/*"],
+      "@entities/*": ["src/entities/*"],
+      "@shared": ["../../shared/src/index.ts"],
+      "@shared/ui": ["../../shared/src/ui/index.ts"],
+      "@shared/configs": ["../../shared/src/configs/index.ts"],
+      "@shared/utils": ["../../shared/src/utils/index.ts"],
+      "@configs/i18n": ["src/configs/i18n"]
+    },
     "types": [
       "jest",
       "node"

@@ -6,28 +6,28 @@ import { Typography } from '../Typography';
 import { Layout } from './Layout';
 
 const meta: Meta<typeof Layout> = {
-  component: Layout,
-  decorators: [
-    (Story) => (
-      <Flex align='center' justify='center'>
-        <Story />
-      </Flex>
-    ),
-  ],
+    component: Layout,
+    decorators: [
+        (Story) => (
+            <Flex align='center' justify='center'>
+                <Story />
+            </Flex>
+        ),
+    ],
 };
 export default meta;
 type Story = StoryObj<typeof Layout>;
 
 export const Dark: Story = {
-  args: {
-    theme: {mode: 'dark'},
-    children: <Typography theme= {{mode: 'dark'}}>Dark Theme</Typography>,
-  },
+    args: {
+        theme: {mode: 'dark'},
+        children: <Typography theme= {{mode: 'dark'}}>Dark Theme</Typography>,
+    },
 };
 
 export const Light: Story = {
-  args: {
-    theme: {mode: 'light'},
-    children: <Typography theme= {{mode: 'light'}}>Light Theme</Typography>
-  },
+    args: {
+        theme: {mode: 'light'},
+        children: <Typography theme= {{mode: 'light'}}>Light Theme</Typography>
+    },
 };

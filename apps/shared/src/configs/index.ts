@@ -1,0 +1,1 @@
+export {privateConfig as envConfig} from './private/private'

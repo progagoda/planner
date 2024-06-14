@@ -5,29 +5,29 @@ import {Flex} from 'antd'
 import { Logo } from './Logo';
 
 const meta: Meta<typeof Logo> = {
-  component: Logo,
-  decorators: [
-    (Story) => (
-      <Flex align='center' justify='center'>
-        <Story />
-      </Flex>
-    ),
-  ],
+    component: Logo,
+    decorators: [
+        (Story) => (
+            <Flex align='center' justify='center'>
+                <Story />
+            </Flex>
+        ),
+    ],
 };
 export default meta;
 type Story = StoryObj<typeof Logo>;
 
 export const Dark: Story = {
-  args: {
-    theme: {mode: 'dark'},
-    children:'Dark Theme',
+    args: {
+        theme: {mode: 'dark'},
+        children:'Dark Theme',
 
-  },
+    },
 };
 
 export const Light: Story = {
-  args: {
-    theme: {mode: 'light'},
-    children:'Light Theme'
-  },
+    args: {
+        theme: {mode: 'light'},
+        children:'Light Theme'
+    },
 };
