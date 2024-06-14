@@ -7,26 +7,26 @@ import { useTranslations } from 'next-intl';
 import { AuthFeature } from '@/features';
 
 export const UserInfo =  () => {
-  const session = useSession();
-  const {signOut, isPending: isLoadingSignOut} = AuthFeature.useSignOut()
-  const t = useTranslations();
+    const session = useSession();
+    const {signOut, isPending: isLoadingSignOut} = AuthFeature.useSignOut()
+    const t = useTranslations();
 
-  if( session.status === 'loading'){
-    return <Typography>Loading...</Typography>
-  }
-  if (session.status === "unauthenticated") {
-    return <Button onClick={()=> signIn()} key='button'>{t('signIn')}</Button>;
-  }
-  const handleLogout = () =>{
-    signOut();
-  }
+    if( session.status === 'loading'){
+        return <Typography>Loading...</Typography>
+    }
+    if (session.status === "unauthenticated") {
+        return <Button onClick={()=> signIn()} key='button'>{t('signIn')}</Button>;
+    }
+    const handleLogout = () =>{
+        signOut();
+    }
 
-  const user = session.data?.user;
+    const user = session.data?.user;
 
-  return (
-    <>
-     <Typography key='user'>{user?.name}</Typography>
-     <Button disabled={isLoadingSignOut} onClick={handleLogout} key='button'>{t('signOut')}</Button>
-    </>
-  )
+    return (
+        <>
+            <Typography key='user'>{user?.name}</Typography>
+            <Button disabled={isLoadingSignOut} onClick={handleLogout} key='button'>{t('signOut')}</Button>
+        </>
+    )
 }

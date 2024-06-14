@@ -1,3 +1,4 @@
+//eslint-disable-next-line @typescript-eslint/no-var-requires
 import NextAuth from "next-auth";
 
 export type UserId = string;
@@ -11,7 +12,7 @@ export type UserEntity = {
     image?: string | null;
   };
   
-  export type SessionEntity = {
+export type SessionEntity = {
     user: {
       id: UserId;
       email: string;

@@ -14,14 +14,14 @@ export interface HeaderProps {
 }
 
 export const Header = (props: HeaderProps) => {
-return (
-  <UIHeader style={{ height: '7.9vh' }} data-testid='header'>
-    <StyledLogo>PLANNER</StyledLogo>
-    <StyledFlexButton>
-      <LangSwitcher/>
-      <Switch data-testid ={'theme-switcher'} defaultChecked checkedChildren={<MoonOutlined />} unCheckedChildren={<SunOutlined />}onClick={props.switchTheme}></Switch>
-      <UserInfo key='userInfo'/>
-    </StyledFlexButton>
-  </UIHeader>
-  )
+    return (
+        <UIHeader style={{ height: '7.9vh' }} data-testid='header'>
+            <StyledLogo>PLANNER</StyledLogo>
+            <StyledFlexButton>
+                <LangSwitcher/>
+                <Switch data-testid ={'theme-switcher'} defaultChecked checkedChildren={<MoonOutlined />} unCheckedChildren={<SunOutlined />}onClick={props.switchTheme}></Switch>
+                <UserInfo key='userInfo'/>
+            </StyledFlexButton>
+        </UIHeader>
+    )
 };

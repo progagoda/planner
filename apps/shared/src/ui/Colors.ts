@@ -20,44 +20,44 @@ export const Colors = {
         placeholder: '#787E8B',
         currentTheme: 'dark'
     }
- }
+}
 
- export const backgroundColor = theme('mode', {
+export const backgroundColor = theme('mode', {
     light: Colors.light.primary,
     dark: Colors.dark.primary,
-  });
+});
 
 export const textColor = theme('mode', {
     light: Colors.light.text,
     dark: Colors.dark.text,
-  });
+});
 
 export const borderColor = theme('mode', {
     light: Colors.light.bordered,
     dark: Colors.dark.bordered,
-  });
+});
 
-  export const hoverBackgroundColor = theme('mode', {
+export const hoverBackgroundColor = theme('mode', {
     light: Colors.light.secondary,
     dark: Colors.dark.secondary,
-  });
+});
   
-  export const hoverTextColor = theme('mode', {
+export const hoverTextColor = theme('mode', {
     light: Colors.light.primary,
     dark: Colors.dark.primary,
-  });
+});
 
-  export const warningTextColor = theme('mode', {
+export const warningTextColor = theme('mode', {
     light: Colors.light.textWarning,
     dark: Colors.dark.textWarning,
-  });
+});
 
-  export const placeholderColor = theme('mode', {
+export const placeholderColor = theme('mode', {
     light: Colors.light.placeholder,
     dark: Colors.dark.placeholder,
-  });
+});
 
-  export const currentTheme = theme('mode', {
+export const currentTheme = theme('mode', {
     light: Colors.light.currentTheme,
     dark: Colors.dark.currentTheme,
-  });
+});
