@@ -5,7 +5,7 @@ import { useCallback, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { Header } from '../../widgets';
 
-export const App = () =>  {
+const App = () =>  {
     const [isLightTheme, setIsLightTheme] = useState(false);
     const switchTheme = useCallback(()=>setIsLightTheme(!isLightTheme),[isLightTheme])
 
@@ -16,4 +16,4 @@ export const App = () =>  {
     );
 }
 
-export default appWithTranslation(App)
+export default appWithTranslation(App) as ()=>never
