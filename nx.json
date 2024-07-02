@@ -4,9 +4,7 @@
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [
       "default",
-      "!{projectRoot}/cypress/**/*",
       "!{projectRoot}/**/*.cy.[jt]s?(x)",
-      "!{projectRoot}/cypress.config.[jt]s",
       "!{projectRoot}/.eslintrc.json",
       "!{projectRoot}/eslint.config.js",
       "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
@@ -22,6 +20,13 @@
   },
   "plugins": [
     {
+      "plugin": "@nx/playwright/plugin",
+      "options": {
+        "ciTargetName": "e2e-ci",
+        "targetName": "e2e"
+      }
+    },
+    {
       "plugin": "@nx/next/plugin",
       "options": {
         "startTargetName": "start",
@@ -31,24 +36,9 @@
       }
     },
     {
-      "plugin": "@nx/cypress/plugin",
-      "options": {
-        "targetName": "e2e",
-        "openTargetName": "open-cypress",
-        "componentTestingTargetName": "component-test",
-        "ciTargetName": "e2e-ci"
-      }
-    },
-    {
       "plugin": "@nx/eslint/plugin",
       "options": {
         "targetName": "lint"
-      }
-    },
-    {
-      "plugin": "@nx/jest/plugin",
-      "options": {
-        "targetName": "test"
       }
     },
     {
@@ -68,6 +58,12 @@
         "buildStorybookTargetName": "build-storybook",
         "testStorybookTargetName": "test-storybook",
         "staticStorybookTargetName": "static-storybook"
+      }
+    },
+    {
+      "plugin": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "test"
       }
     }
   ],
@@ -92,14 +88,8 @@
   "nxCloudAccessToken": "MmU3OTg5YTQtZGExOC00NmQ1LTg3YjItMDY5N2M1MDU1N2MxfHJlYWQtd3JpdGU=",
   "targetDefaults": {
     "build": {
-      "dependsOn": [
-        "^build"
-      ],
-      "outputs": [
-        "{projectRoot}/dist",
-        "{projectRoot}/build",
-        "{projectRoot}/public/build"
-      ]
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/dist", "{projectRoot}/build", "{projectRoot}/public/build"]
     },
     "@nx/js:tsc": {
       "cache": true,

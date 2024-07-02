@@ -1,0 +1,13 @@
+{
+    "signIn": "sign in",
+    "signOut": "sign out",
+    "active_locale": "English",
+    "button_label": "Read More",
+    "homepage_nav_link_label": "Go Back",
+    "root": {
+        "metadata":{
+          "title": "PLANNER",
+          "description": "Manage tasks"
+        }
+    }
+  }

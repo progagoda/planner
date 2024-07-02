@@ -1,0 +1,2 @@
+npx nx affected -t lint,test --base=origin/main~1 --head=origin/main --parallel=3
+

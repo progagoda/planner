@@ -40,6 +40,6 @@ type TSelectProps = SelectProps & {
   theme?: { mode: string;}
 }
 export const Select = (props: TSelectProps)=> <StyledSelect {...props} dropdownStyle={{
-  // background: 'red',
-  // color: 'white'
+    // background: 'red',
+    // color: 'white'
 }}/> 

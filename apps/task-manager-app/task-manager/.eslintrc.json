@@ -1,11 +1,18 @@
 {
   "extends": [
+    "plugin:playwright/recommended",
     "plugin:@nx/react-typescript",
+    "plugin:@conarti/feature-sliced/recommended",
     "next",
     "next/core-web-vitals",
     "../../../.eslintrc.json"
   ],
   "ignorePatterns": ["!**/*", ".next/**/*"],
+  "rules": {
+    "@conarti/feature-sliced/layers-slices": "error",
+    "@conarti/feature-sliced/absolute-relative": "error",
+    "@conarti/feature-sliced/public-api": "error"
+  },
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
@@ -26,6 +33,10 @@
       "env": {
         "jest": true
       }
+    },
+    {
+      "files": ["e2e/**/*.{ts,js,tsx,jsx}"],
+      "rules": {}
     }
   ]
 }
