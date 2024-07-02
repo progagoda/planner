@@ -20,18 +20,10 @@
   },
   "plugins": [
     {
-      "plugin": "@nx/jest/plugin",
-      "exclude": ["e2e/**/*"],
+      "plugin": "@nx/playwright/plugin",
       "options": {
+        "ciTargetName": "e2e-ci",
         "targetName": "e2e"
-      }
-    },
-    {
-      "plugin": "@nx/jest/plugin",
-      "include": ["e2e/**/*"],
-      "options": {
-        "targetName": "e2e-local",
-        "ciTargetName": "e2e-ci"
       }
     },
     {

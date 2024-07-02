@@ -3,13 +3,13 @@ import { defineConfig, devices } from '@playwright/test';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 
 // For CI, you may want to set BASE_URL to the deployed application.
-const baseURL = process.env['BASE_URL'] ?? 'http://localhost:3000';
+const baseURL = 'http://localhost:4200';
 
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-    ...nxE2EPreset(__filename, { testDir: './e2e' }),
+    ...nxE2EPreset(__filename, { testDir: '../task-manager-e2e' }),
     /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
     use: {
         baseURL,
@@ -18,8 +18,8 @@ export default defineConfig({
     },
     /* Run your local dev server before starting the tests */
     webServer: {
-        command: 'npx serve task-manager',
-        url: 'http://localhost:3000',
+        command: 'npm run start task-manager',
+        url: 'http://127.0.0.1:4200 ',
         reuseExistingServer: !process.env.CI,
     },
     projects: [
