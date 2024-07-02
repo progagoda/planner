@@ -1,9 +1,9 @@
 'use client'
 import { Locale } from '@configs/i18n';
-import { Button } from '@shared/ui';
-import { useLocale } from 'next-intl';
 import { useParams} from 'next/navigation';
+import { useLocale } from 'next-intl';
 import { useTransition } from 'react';
+import { Button } from '@shared/ui';
 import { usePathname, useRouter } from './navigation';
 /* eslint-disable-next-line */
 export interface LangSwitcherProps {}

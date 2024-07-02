@@ -1,8 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import { antIcons,Header as UIHeader, Switch } from '@shared/ui';
-
-import { StyledFlexButton, StyledLogo } from './styles';
 import { LangSwitcher } from '../lang-switcher';
+import { StyledFlexButton, StyledLogo } from './styles';
 import { UserInfo } from './UserInfo';
 
 

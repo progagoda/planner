@@ -1,9 +1,9 @@
 'use client';
 
-import { useCallback, useState } from 'react';
-import { Header } from '../../widgets';
-import { ThemeProvider } from 'styled-components';
 import { appWithTranslation } from 'next-i18next';
+import { useCallback, useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { Header } from '../../widgets';
 
 export const App = () =>  {
     const [isLightTheme, setIsLightTheme] = useState(false);

@@ -1,13 +1,14 @@
-import { type Locale, locales } from "./configs/i18n";
-import createMiddleware from "next-intl/middleware";
 import { type NextRequest, type NextResponse } from "next/server";
+import createMiddleware from "next-intl/middleware";
+import { type Locale, locales } from "./configs/i18n";
 
 const nextIntlMiddleware = createMiddleware({
     locales,
     defaultLocale: "en" satisfies Locale,
     localePrefix: "never",
 });
-//@eslint-disable-next-line
+
+// eslint-disable-next-line import/no-anonymous-default-export
 export default function (req: NextRequest): NextResponse {
     return nextIntlMiddleware(req);
 }

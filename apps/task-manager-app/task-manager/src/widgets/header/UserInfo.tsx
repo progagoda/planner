@@ -1,10 +1,10 @@
 "use client"
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-import {Button, Typography } from '@shared/ui';
 
 import { useSession, signIn } from 'next-auth/react';
 import { useTranslations } from 'next-intl';
 import { AuthFeature } from '@/features';
+import {Button, Typography } from '@shared/ui';
 
 export const UserInfo =  () => {
     const session = useSession();

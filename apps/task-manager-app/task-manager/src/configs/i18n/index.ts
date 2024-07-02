@@ -1,7 +1,7 @@
 'server-only'
-import {getRequestConfig} from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { type AbstractIntlMessages } from "next-intl";
+import {getRequestConfig} from 'next-intl/server';
 
 export const locales = ["en", "ru"] as const;
 export type Locale = (typeof locales)[number];

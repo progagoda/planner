@@ -3,5 +3,11 @@
     "signOut": "Выйти",
     "active_locale": "Актив",
     "button_label": "Прочитать больше",
-    "homepage_nav_link_label": "Вернуться назад"
+    "homepage_nav_link_label": "Вернуться назад",
+    "root": {
+      "metadata":{
+        "title": "Планировщик",
+        "description": "Управляй задачами"
+      }
+  }
   }

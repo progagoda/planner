@@ -1,9 +1,10 @@
 import { Locale } from '@configs/i18n';
-import { AppProvider } from './_providers/app-provider';
 import './global.css';
-import { getMessages, getTranslations } from "next-intl/server";
-import { NextIntlClientProvider } from "next-intl";
 import type { Metadata } from 'next';
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, getTranslations } from "next-intl/server";
+import { AppProvider } from './_providers/app-provider';
+
 
 type Props = {
   children: React.ReactNode;
@@ -11,6 +12,7 @@ type Props = {
     locale: Locale;
   };
 };
+
 const RootLayout: React.FC<Props>  = async (props)=> {
     const messages = await getMessages();
     return (

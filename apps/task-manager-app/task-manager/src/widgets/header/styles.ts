@@ -1,5 +1,5 @@
-import { Flex, Logo } from '@shared/ui'
 import styled from 'styled-components';
+import { Flex, Logo } from '@shared/ui'
 
 export const StyledFlexButton = styled(Flex)`
     display: flex;

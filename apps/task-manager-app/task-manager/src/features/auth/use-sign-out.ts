@@ -1,6 +1,6 @@
 import { useMutation } from "@tanstack/react-query";
-import { signOut } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import { signOut } from "next-auth/react";
 
 export function useSignOut() {
     const router = useRouter();
