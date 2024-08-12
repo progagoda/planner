@@ -12,5 +12,8 @@ export const Header = styled(AntHeader)`
     justify-content: space-between;
     border-bottom: 1px solid ${borderColor};
     &.ant-layout-header{
-        background-color: ${backgroundColor}
-    }`
+        background-color: ${backgroundColor};
+        padding: 20px 10px;
+    }
+    
+    `

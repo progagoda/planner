@@ -4,6 +4,8 @@ import type { Metadata } from 'next';
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { AppProvider } from './_providers/app-provider';
+import StyledComponentsRegistry from './_providers/registery';
+import { ShellProvider } from './_providers/shell-provider';
 
 
 type Props = {
@@ -19,7 +21,13 @@ const RootLayout: React.FC<Props>  = async (props)=> {
         <html lang={props.params.locale}>
             <body>
                 <NextIntlClientProvider messages={messages}>
-                    <AppProvider>{props.children}</AppProvider>
+                    <StyledComponentsRegistry>
+                        <AppProvider>
+                            <ShellProvider>
+                                {props.children}
+                            </ShellProvider>
+                        </AppProvider>
+                    </StyledComponentsRegistry>
                 </NextIntlClientProvider>
             </body>
         </html>

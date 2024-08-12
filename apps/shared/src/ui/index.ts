@@ -13,8 +13,9 @@ export {Sider} from './Sider'
 export {Spinner} from './Spinner'
 export {TimeRangePicker} from './TimeRangePicker'
 export {Title, Typography} from './Typography'
+export {Dropdown} from './Dropdown'
 export {Calendar} from './Сalendar'
 export { MenuFoldOutlined,MenuUnfoldOutlined  } from '@ant-design/icons';
 export * as antIcons from '@ant-design/icons';
-export type {FormProps} from 'antd'
-export {type CalendarProps, ConfigProvider, Empty,Flex, Form, List, Row, Skeleton,Switch } from 'antd'
+export type {FormProps, CalendarProps, DropdownProps, MenuProps} from 'antd'
+export { ConfigProvider, Empty,Flex, Form, List, Row, Skeleton, Switch, Avatar } from 'antd'

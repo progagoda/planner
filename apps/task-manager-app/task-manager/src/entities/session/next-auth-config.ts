@@ -2,6 +2,7 @@ import {compact} from 'lodash-es'
 import { AuthOptions } from "next-auth"
 import GithubProvider from "next-auth/providers/github"
 import {envConfig} from '@shared/configs'
+
 export const nextAuthConfig: AuthOptions = {
     // Configure one or more authentication providers
     providers: compact([
