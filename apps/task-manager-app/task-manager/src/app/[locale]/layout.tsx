@@ -43,12 +43,12 @@ export async function generateMetadata({
     return {
         title: t("metadata.title"),
         description: t("metadata.description"),
-        icons: [
-            {
-                url: 'https://cdn-icons-png.flaticon.com/512/3234/3234972.png',
-                href: 'https://cdn-icons-png.flaticon.com/512/3234/3234972.png',
-            }
-        ]
+        // icons: [
+        //     {
+        //         url: 'https://cdn-icons-png.flaticon.com/512/3234/3234972.png',
+        //         href: 'https://cdn-icons-png.flaticon.com/512/3234/3234972.png',
+        //     }
+        // ]
     };
 }
 
