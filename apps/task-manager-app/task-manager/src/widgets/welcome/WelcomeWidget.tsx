@@ -1,8 +1,8 @@
 'use client'
 
+import { AuthFeature } from '@/features';
 import { Flex } from "@shared/ui"
 import { AboutApp } from "./_ui/AboutApp"
-import { AuthFeature } from '@/features';
 import { Features } from "./_ui/Features";
 export const WelcomeWidget = () => {
     const {SignInButton} = AuthFeature

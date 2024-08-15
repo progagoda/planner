@@ -1,9 +1,9 @@
+import { useAuth } from '@clerk/nextjs';
 import Link from 'next/link'
 import { antIcons,Header as UIHeader, Switch } from '@shared/ui';
 import { LangSwitcher } from '../lang-switcher';
 import { UserInfo } from './_ui/UserInfo';
 import { StyledFlexButton, StyledLogo } from './styles';
-import { useAuth } from '@clerk/nextjs';
 import { homePageURL, welcomePageURL } from '@/configs/constants';
 
 const { MoonOutlined, SunOutlined } = antIcons

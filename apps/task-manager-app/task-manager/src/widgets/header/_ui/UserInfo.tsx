@@ -1,8 +1,8 @@
 'use client'
 import { useAuth, UserButton } from '@clerk/nextjs';
-import { AuthFeature } from '@/features';
 import SkeletonAvatar from 'antd/es/skeleton/Avatar';
 import { usePathname } from 'next/navigation';
+import { AuthFeature } from '@/features';
 import { signInURL, signUpURL } from '@/configs/constants';
 
 export const UserInfo =  () => {
@@ -22,10 +22,10 @@ export const UserInfo =  () => {
     }
     return (
         <UserButton>
-             <UserButton.MenuItems>
+            <UserButton.MenuItems>
                 <UserButton.Action label="manageAccount" />
                 <UserButton.Action label="signOut" />
             </UserButton.MenuItems>
-      </UserButton>
+        </UserButton>
     )
 }

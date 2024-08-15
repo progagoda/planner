@@ -1,15 +1,14 @@
 'use client'
+import {ruRU, enUS} from '@clerk/localizations'
+import { ClerkProvider } from "@clerk/nextjs";
+import { dark } from '@clerk/themes'
+import { useLocale } from 'next-intl';
 import { useEffect, useReducer, useState } from "react";
 import { ThemeProvider as DefaultThemeProvider } from "styled-components"
 import { Header } from '@/widgets';
 import { Layout } from "@shared/ui";
-import { Flex } from "antd";
-import { ClerkProvider } from "@clerk/nextjs";
-import { dark } from '@clerk/themes'
-import { useLocale } from 'next-intl';
-import {ruRU, enUS} from '@clerk/localizations'
-import { Locale } from "@/configs/i18n";
 import { welcomePageURL } from "@/configs/constants";
+import { Locale } from "@/configs/i18n";
 
 export const ShellProvider = ({children}: {children?: React.ReactNode}) => {
     const [theme, setTheme] = useState('')
@@ -46,11 +45,11 @@ export const ShellProvider = ({children}: {children?: React.ReactNode}) => {
     return (
         <DefaultThemeProvider theme={{mode: theme}}>
             <ClerkProvider
-            appearance={{
-                baseTheme: clerkTheme,
-              }}
-              localization={clerkLanguage}
-              afterSignOutUrl = {welcomePageURL}
+                appearance={{
+                    baseTheme: clerkTheme,
+                }}
+                localization={clerkLanguage}
+                afterSignOutUrl = {welcomePageURL}
             >
                 <Header switchTheme={switchTheme} isDarkTheme = {theme ==='dark'}/>
                 <Layout style={{height:'93vh'}}>

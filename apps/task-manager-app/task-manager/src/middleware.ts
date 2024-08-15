@@ -1,7 +1,6 @@
-import { type NextRequest } from "next/server";
+import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
 import createMiddleware from "next-intl/middleware";
 import { type Locale, locales } from "./configs/i18n";
-import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
 import { homePageURL, kanbanFeatureURL } from "@/configs/constants";
 
 
