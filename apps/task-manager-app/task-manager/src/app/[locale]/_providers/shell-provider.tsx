@@ -2,12 +2,20 @@
 import { useEffect, useReducer, useState } from "react";
 import { ThemeProvider as DefaultThemeProvider } from "styled-components"
 import { Header } from '@/widgets';
+import { Layout } from "@shared/ui";
+import { Flex } from "antd";
+import { ClerkProvider } from "@clerk/nextjs";
+import { dark } from '@clerk/themes'
+import { useLocale } from 'next-intl';
+import {ruRU, enUS} from '@clerk/localizations'
+import { Locale } from "@/configs/i18n";
+import { welcomePageURL } from "@/configs/constants";
 
 export const ShellProvider = ({children}: {children?: React.ReactNode}) => {
     const [theme, setTheme] = useState('')
+    const locale = useLocale() as Locale;
     const [_, forceUpdate] = useReducer((x) => x + 1, 0);
     const [isLoading, setIsLoading] = useState(true);
-    
     const switchTheme = ()=> {
         if(theme=='light'){
             setTheme('dark')
@@ -31,9 +39,23 @@ export const ShellProvider = ({children}: {children?: React.ReactNode}) => {
     if (isLoading) {
         return <div>Loading...</div>
     }
+
+    const clerkTheme = theme === 'dark' ? dark : undefined
+    const clerkLanguage = locale === 'ru' ? ruRU : enUS
+
     return (
         <DefaultThemeProvider theme={{mode: theme}}>
-            <Header switchTheme={switchTheme} isDarkTheme = {theme ==='dark'}/>
-            {children}
+            <ClerkProvider
+            appearance={{
+                baseTheme: clerkTheme,
+              }}
+              localization={clerkLanguage}
+              afterSignOutUrl = {welcomePageURL}
+            >
+                <Header switchTheme={switchTheme} isDarkTheme = {theme ==='dark'}/>
+                <Layout style={{height:'93vh'}}>
+                    {children}
+                </Layout>
+            </ClerkProvider>
         </DefaultThemeProvider>)
 }

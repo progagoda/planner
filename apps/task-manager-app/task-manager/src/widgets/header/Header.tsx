@@ -3,6 +3,8 @@ import { antIcons,Header as UIHeader, Switch } from '@shared/ui';
 import { LangSwitcher } from '../lang-switcher';
 import { UserInfo } from './_ui/UserInfo';
 import { StyledFlexButton, StyledLogo } from './styles';
+import { useAuth } from '@clerk/nextjs';
+import { homePageURL, welcomePageURL } from '@/configs/constants';
 
 const { MoonOutlined, SunOutlined } = antIcons
 
@@ -12,9 +14,13 @@ export interface HeaderProps {
 }
 
 export const Header = (props: HeaderProps) => {
+    const {userId} = useAuth()
+ 
+    const homeLink = userId ? homePageURL : welcomePageURL
+
     return (
         <UIHeader style={{ height: '7.9vh' }} data-testid='header'>
-            <Link href='/'>
+            <Link href={homeLink}>
                 <StyledLogo>PLANNER</StyledLogo>
             </Link>
             <StyledFlexButton>

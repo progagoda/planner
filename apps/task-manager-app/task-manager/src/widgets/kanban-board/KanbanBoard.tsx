@@ -1,6 +1,9 @@
+'use client'
+
+import { Card } from "@shared/ui"
 
 export const KanbanBoard = () => {
     return (
-        <>Hi</>
+        <Card>Example card</Card>
     )
 }

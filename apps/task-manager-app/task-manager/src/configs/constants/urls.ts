@@ -1,0 +1,5 @@
+export const welcomePageURL = '/welcome'
+export const homePageURL = '/'
+export const signInURL = '/sign-in'
+export const signUpURL = '/sign-up'
+export const kanbanFeatureURL = '/kanban'

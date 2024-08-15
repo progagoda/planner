@@ -11,8 +11,8 @@ export const defaultLocale = 'en' as const;
 export const pathnames = {
     '/': '/',
     '/pathnames': {
-        en: '/pathnames',
-        ru: '/pfadnamen'
+        en: '/en',
+        ru: '/ru'
     }
 } satisfies Pathnames<typeof locales>;
 

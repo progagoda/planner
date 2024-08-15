@@ -1,33 +1,31 @@
 'use client'
-import { useState } from 'react';
+import { useAuth, UserButton } from '@clerk/nextjs';
 import { AuthFeature } from '@/features';
-import { useAppSession } from '@/entities/session/use-app-session';
-import {Skeleton, Avatar, Dropdown, MenuProps } from '@shared/ui';
-import { LogoutButton } from './LogoutButton';
+import SkeletonAvatar from 'antd/es/skeleton/Avatar';
+import { usePathname } from 'next/navigation';
+import { signInURL, signUpURL } from '@/configs/constants';
 
 export const UserInfo =  () => {
-    const session = useAppSession();
+    const {sessionId, isLoaded} = useAuth()
+    const currentPath = usePathname()
     const {SignInButton} = AuthFeature;
-    const [open, setOpen] = useState(false);
   
-    if (session.status === "loading") {
-        return <Skeleton/>
-    }
+    if (!isLoaded) {
+        return <SkeletonAvatar/>
 
-    if (session.status === "unauthenticated") {
+    }
+    if (currentPath===signInURL || currentPath===signUpURL){
+        return;
+    }
+    if (!sessionId) {
         return <SignInButton />;
     }
-
-    const items: MenuProps['items'] = [
-        {
-            label: <LogoutButton/>,
-            key: 'logout',
-        },
-    ]
-
     return (
-        <Dropdown menu={{items}} onOpenChange={()=>setOpen(!open)}>
-            <Avatar size="large" src={session.data?.user?.image}/>
-        </Dropdown>
+        <UserButton>
+             <UserButton.MenuItems>
+                <UserButton.Action label="manageAccount" />
+                <UserButton.Action label="signOut" />
+            </UserButton.MenuItems>
+      </UserButton>
     )
 }

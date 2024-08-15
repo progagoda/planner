@@ -1,7 +1,9 @@
-import { NextResponse, type NextRequest } from "next/server";
+import { type NextRequest } from "next/server";
 import createMiddleware from "next-intl/middleware";
 import { type Locale, locales } from "./configs/i18n";
-export { default } from "next-auth/middleware"
+import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
+import { homePageURL, kanbanFeatureURL } from "@/configs/constants";
+
 
 const nextIntlMiddleware = createMiddleware({
     locales,
@@ -9,16 +11,12 @@ const nextIntlMiddleware = createMiddleware({
     localePrefix: "never",
 });
 
+const isProtectedRoute = createRouteMatcher([`/${kanbanFeatureURL}/(.*)`, homePageURL])
 
-
-export function middleware(request: NextRequest) {
-    const currentUser = request.cookies.get('next-auth.session-token')?.value
-   
-    if (!currentUser && !request.nextUrl.pathname.startsWith('/welcome') && !request.nextUrl.pathname.startsWith('/api')) {
-        return Response.redirect(new URL('/api/auth/signin', request.url))
-    }
-    return nextIntlMiddleware(request);
-}
+export default clerkMiddleware((auth, req) => {
+    if (isProtectedRoute(req)) auth().protect()
+    return nextIntlMiddleware(req);
+})
 
 export const config = {
     // match only internationalized pathnames
@@ -28,7 +26,14 @@ export const config = {
     // - … the ones containing a dot (e.g. `favicon.ico`)
         "/((?!_next|_vercel|.*\\..*).*)",
         '/!api',
+        // '/((?!sign-in).*)', 
         '/((?!api|_next/static|_next/image|.*\\.png$).*)',
+        // Skip Next.js internals and all static files, unless found in search params
+        '/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',
+        // Always run for API routes
+        '/(api|trpc)(.*)',
+        '/sign-in(.*)',
+        '/sign-up(.*)'
     ],
 };
    

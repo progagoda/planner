@@ -9,5 +9,12 @@
           "title": "PLANNER",
           "description": "Manage tasks"
         }
+    },
+    "welcome": {
+      "aboutAppTitle": "Hi! I'm your planner app",
+      "aboutAppDescription": "Planning task, project, life",
+      "createNote": "Create note",
+      "createTask": "Create task",
+      "createEvent": "Create event"
     }
   }
