@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nx serve task-manager",
+    "start:prod": "nx run task-manager:serve:production",
     "build": "nx build task-manager",
     "test": "nx test",
     "lint": "nx lint",
