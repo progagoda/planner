@@ -1,9 +1,8 @@
-'use client'
-
+import { Flex } from "antd"
 import { AuthFeature } from '@/features';
-import { Flex } from "@shared/ui"
 import { AboutApp } from "./_ui/AboutApp"
 import { Features } from "./_ui/Features";
+
 export const WelcomeWidget = () => {
     const {SignInButton} = AuthFeature
     

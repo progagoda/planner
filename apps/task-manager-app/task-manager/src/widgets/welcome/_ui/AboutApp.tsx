@@ -1,5 +1,4 @@
 'use client'
-
 import { useTranslations } from 'next-intl';
 import { Title, Flex, Typography } from "@shared/ui"
 

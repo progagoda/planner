@@ -1,6 +1,6 @@
 'use client'
 import { useAuth, UserButton } from '@clerk/nextjs';
-import SkeletonAvatar from 'antd/es/skeleton/Avatar';
+import { Skeleton } from 'antd';
 import { usePathname } from 'next/navigation';
 import { AuthFeature } from '@/features';
 import { signInURL, signUpURL } from '@/configs/constants';
@@ -11,7 +11,7 @@ export const UserInfo =  () => {
     const {SignInButton} = AuthFeature;
   
     if (!isLoaded) {
-        return <SkeletonAvatar/>
+        return <Skeleton.Avatar/>
 
     }
     if (currentPath===signInURL || currentPath===signUpURL){

@@ -1,10 +1,7 @@
 import { WelcomeWidget } from "@/widgets/welcome";
 
-const Welcome = () =>  {
+export default function Welcome(){
     return (
         <WelcomeWidget/>
-
     );
 }
-
-export default Welcome

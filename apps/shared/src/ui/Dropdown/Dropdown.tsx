@@ -2,7 +2,7 @@
 import { Dropdown as AntDropdown } from 'antd';
 import styled from 'styled-components';
 
-import { backgroundColor, hoverBackgroundColor, textColor } from '../Colors';
+import { backgroundColor} from '../Colors';
 
   
 export const Dropdown = styled(AntDropdown)`

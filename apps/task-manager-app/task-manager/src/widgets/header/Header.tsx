@@ -2,6 +2,7 @@ import { useAuth } from '@clerk/nextjs';
 import Link from 'next/link'
 import { antIcons,Header as UIHeader, Switch } from '@shared/ui';
 import { LangSwitcher } from '../lang-switcher';
+import { ScopeSwitcher } from './_ui/ScopeSwitcher';
 import { UserInfo } from './_ui/UserInfo';
 import { StyledFlexButton, StyledLogo } from './styles';
 import { homePageURL, welcomePageURL } from '@/configs/constants';
@@ -17,7 +18,6 @@ export const Header = (props: HeaderProps) => {
     const {userId} = useAuth()
  
     const homeLink = userId ? homePageURL : welcomePageURL
-
     return (
         <UIHeader style={{ height: '7.9vh' }} data-testid='header'>
             <Link href={homeLink}>
@@ -26,6 +26,7 @@ export const Header = (props: HeaderProps) => {
             <StyledFlexButton>
                 <LangSwitcher/>
                 <Switch data-testid ={'theme-switcher'} defaultChecked={props.isDarkTheme} checkedChildren={<MoonOutlined />} unCheckedChildren={<SunOutlined />} onClick={props.switchTheme} />
+                <ScopeSwitcher/>
                 <UserInfo key='userInfo'/>
             </StyledFlexButton>
         </UIHeader>

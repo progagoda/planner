@@ -1,7 +1,7 @@
+'use client'
 import { useTranslations } from "next-intl"
 import { Utils } from "@shared"
-import { Flex, Typography } from "@shared/ui"
-import { antIcons } from "@shared/ui"
+import { Flex, Typography, antIcons } from "@shared/ui"
 
 const {BookOutlined, CalendarOutlined, ProjectOutlined }  = antIcons
 const {prepareIconProps} = Utils

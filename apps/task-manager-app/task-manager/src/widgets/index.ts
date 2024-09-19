@@ -1,2 +1,2 @@
 export {Header} from './header'
-export {KanbanBoard} from './kanban-board'
+export {BoardSwitcher} from './board-switcher'

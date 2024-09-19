@@ -9,9 +9,11 @@ export const Menu = styled(AntMenu)`
     color: ${textColor};
  }
  
-&.ant-menu{
+&.ant-menu {
     background-color: ${backgroundColor};
-    border-right: 1px solid ${borderColor}
+}
+&&.ant-menu-vertical {
+    border-inline-end: 1px solid ${borderColor};
 }
 
 &.ant-menu-light .ant-menu-item-selected{

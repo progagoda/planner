@@ -10,3 +10,7 @@ color: ${props=> props.textWarning ? warningTextColor : textColor}
 export const Title = styled(AntTypography.Title)`
     color: ${textColor} !important;
 `
+
+export const Text = styled(AntTypography.Text)`
+    color: ${textColor} !important;
+`
