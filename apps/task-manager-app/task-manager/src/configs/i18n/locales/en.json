@@ -1,13 +1,50 @@
 {
-    "signIn": "sign in",
-    "signOut": "sign out",
-    "active_locale": "English",
-    "button_label": "Read More",
-    "homepage_nav_link_label": "Go Back",
-    "root": {
-        "metadata":{
-          "title": "PLANNER",
-          "description": "Manage tasks"
-        }
+  "signIn": "Войти",
+  "signOut": "Выйти",
+  "active_locale": "Актив",
+  "button_label": "Прочитать больше",
+  "homepage_nav_link_label": "Вернуться назад",
+  "root": {
+    "metadata": {
+      "title": "Планировщик",
+      "description": "Управляй задачами"
     }
+  },
+  "welcome": {
+    "aboutAppTitle": "Привет! Я твое приложение для планирования",
+    "aboutAppDescription": "Планируй задачи, проекты, жизнь",
+    "createNote": "Создавай заметки",
+    "createTask": "Создавай задачи",
+    "createEvent": "Создавай события"
+  },
+  "dashboard": {
+    "scopeSwither": {
+      "title": "Scopes"
+    }
+  },
+  "boardCard": {
+       "deletePopconfirm":{
+        "title": "Delete this board?",
+        "description": "Are you sure to delete this board?",
+        "okText": "Yes",
+        "cancelText": "No"
+       }
+  },
+  "createBoard": {
+    "title": "Create board",
+    "form":{
+      "labels": {
+        "name": "Board title",
+        "backgroundLink": "Background photo link"
+      },
+      "placeholders": {
+         "name": "Example board",
+         "backgroundLink": "http://example-background-image/test.jpg"
+      }
+    },
+    "buttons":{
+      "confirm": "Create",
+      "cancel": "Cancel"
+   }
   }
+}

@@ -3,21 +3,21 @@ import theme from 'styled-theming';
 
 export const Colors = {
     light:{
-        primary: generate('#EFEFF3')[5],
-        secondary: generate('#F3F3F3')[6],
-        bordered: generate('#EBEBEB')[5],
-        text: generate('#000000')[5],
-        textWarning: '#d74848',
-        placeholder: '#787E8B', 
+        primary: generate('#fff')[5],
+        secondary: generate('#ececef')[6],
+        bordered: generate('#dcdcde')[5],
+        text: generate('#434248')[5],
+        textWarning: '#c91c00',
+        placeholder: '#626168', 
         currentTheme: 'light'
     },
     dark: {
-        primary: generate('#000000')[5],
-        secondary: generate('#1F2023')[5],
-        bordered: generate('#26272C')[5],
-        text:  generate('#ffffff')[5],
-        textWarning: '#ff0000',
-        placeholder: '#787E8B',
+        primary: generate('#1f1e24')[5],
+        secondary: generate('#434248')[5],
+        bordered: generate('#434248')[5],
+        text:  generate('#ececef')[5],
+        textWarning: '#f57f6c',
+        placeholder: '#bfbfc3',
         currentTheme: 'dark'
     }
 }

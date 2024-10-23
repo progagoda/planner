@@ -1,24 +1,37 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
+import { useAuth } from '@clerk/nextjs';
+import Link from 'next/link'
 import { antIcons,Header as UIHeader, Switch } from '@shared/ui';
 import { LangSwitcher } from '../lang-switcher';
+import { ScopeSwitcher } from './_ui/ScopeSwitcher';
+import { UserInfo } from './_ui/UserInfo';
 import { StyledFlexButton, StyledLogo } from './styles';
-import { UserInfo } from './UserInfo';
-
+import { homePageURL, welcomePageURL } from '@/configs/constants';
 
 const { MoonOutlined, SunOutlined } = antIcons
 
-/* eslint-disable-next-line */
 export interface HeaderProps {
   switchTheme: ()=> void;
+  isDarkTheme: boolean;
 }
 
 export const Header = (props: HeaderProps) => {
+    const {userId} = useAuth()
+ 
+    const homeLink = userId ? homePageURL : welcomePageURL
     return (
         <UIHeader style={{ height: '7.9vh' }} data-testid='header'>
-            <StyledLogo>PLANNER</StyledLogo>
+            <Link href={homeLink}>
+                <StyledLogo>PLANNER</StyledLogo>
+            </Link>
             <StyledFlexButton>
                 <LangSwitcher/>
-                <Switch data-testid ={'theme-switcher'} defaultChecked checkedChildren={<MoonOutlined />} unCheckedChildren={<SunOutlined />}onClick={props.switchTheme}></Switch>
+                <Switch 
+                    data-testid ={'theme-switcher'} 
+                    defaultChecked={props.isDarkTheme} 
+                    checkedChildren={<MoonOutlined />} 
+                    unCheckedChildren={<SunOutlined />} 
+                    onClick={props.switchTheme} />
+                <ScopeSwitcher/>
                 <UserInfo key='userInfo'/>
             </StyledFlexButton>
         </UIHeader>
