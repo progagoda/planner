@@ -26,7 +26,8 @@
       "@shared/configs": ["../../shared/src/configs/index.ts"],
       "@shared/utils": ["../../shared/src/utils/index.ts"],
       "@configs/i18n": ["src/configs/i18n"],
-      "@configs/constants": ["src/configs/constants"]
+      "@configs/constants": ["src/configs/constants"],
+      "@configs/api": ["src/configs/api"]
     },
     "types": [
       "jest",

@@ -39,3 +39,6 @@ export const FormButton = styled(AntButton)`
     color: ${textColor}
     }
 `
+export const IconButton = styled.div`
+  cursor: pointer;
+`

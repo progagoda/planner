@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { Card } from "@shared/ui";
 
 
-export const StyledCard = styled(Card)< {$backgroundURL: string; }>`
+export const StyledCard = styled(Card)< {backgroundURL: string; }>`
     background-position: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(${props=>props.$backgroundURL});
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(${props=>props.backgroundURL});
     background-size: 400px 300px;
     .ant-typography {
             color: #ececef;

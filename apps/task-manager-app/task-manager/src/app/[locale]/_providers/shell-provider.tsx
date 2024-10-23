@@ -13,7 +13,7 @@ import { Locale } from "@/configs/i18n";
 export const ShellProvider = ({children}: {children?: React.ReactNode}) => {
     const [theme, setTheme] = useState('')
     const locale = useLocale() as Locale;
-    const [_, forceUpdate] = useReducer((x) => x + 1, 0);
+    const [, forceUpdate] = useReducer((x) => x + 1, 0);
     const [isLoading, setIsLoading] = useState(true);
     const switchTheme = ()=> {
         if(theme=='light'){

@@ -8,7 +8,7 @@ export const useGetBoard = () => {
     const {data, isLoading} = useQuery<TBoard[]>({
         queryKey: ['boards'],
         queryFn: async () => { 
-            const response = await fetch((`/api/boards?`) + new URLSearchParams({
+            const response = await fetch((`/api/board?`) + new URLSearchParams({
                 scopeId: organization?.id ?? ''
             }).toString())
             if (!response.ok) {
@@ -32,14 +32,13 @@ export const useCreateBoardMutation = () => {
     const {mutate} = useMutation<TBoard, Omit<TBoard, 'id' | 'scopeId'>, Omit<TBoard, 'id' | 'scopeId'>>({
         mutationKey: ['createBoard'],
         mutationFn: async (args) => { 
-            const response = await fetch(`/api/boards`, {
+            const response = await fetch(`/api/board`, {
                 method: 'POST',
                 body: JSON.stringify({
-                    variables: {
-                        scopeId: organization?.id,
-                        ...args
-                    }
-                })
+                    scopeId: organization?.id,
+                    ...args
+                }
+                )
             })
             if (!response.ok) {
                 throw new Error('Network response was not ok')
@@ -63,7 +62,7 @@ export const useDeleteCardMutation = () => {
     const {mutate} = useMutation<TBoard, Pick<TBoard, 'id'>, Pick<TBoard, 'id'>>({
         mutationKey: ['deleteBoard'],
         mutationFn: async (args) => { 
-            const response = await fetch(`/api/boards`, {
+            const response = await fetch(`/api/board`, {
                 method: 'DELETE',
                 body: JSON.stringify({
                     variables: {

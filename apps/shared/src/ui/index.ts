@@ -1,4 +1,4 @@
-export {Button, FormButton} from './Button'
+export {Button, FormButton, IconButton} from './Button'
 export {Card} from './Card'
 export {Drawer} from './Drawer'
 export {Header} from './Header'

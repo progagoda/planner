@@ -1,1 +1,1 @@
-export {Button, FormButton} from './Button'
+export {Button, FormButton, IconButton} from './Button'

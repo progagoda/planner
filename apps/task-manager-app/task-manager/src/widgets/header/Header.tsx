@@ -25,7 +25,12 @@ export const Header = (props: HeaderProps) => {
             </Link>
             <StyledFlexButton>
                 <LangSwitcher/>
-                <Switch data-testid ={'theme-switcher'} defaultChecked={props.isDarkTheme} checkedChildren={<MoonOutlined />} unCheckedChildren={<SunOutlined />} onClick={props.switchTheme} />
+                <Switch 
+                    data-testid ={'theme-switcher'} 
+                    defaultChecked={props.isDarkTheme} 
+                    checkedChildren={<MoonOutlined />} 
+                    unCheckedChildren={<SunOutlined />} 
+                    onClick={props.switchTheme} />
                 <ScopeSwitcher/>
                 <UserInfo key='userInfo'/>
             </StyledFlexButton>

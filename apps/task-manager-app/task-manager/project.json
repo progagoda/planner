@@ -60,6 +60,12 @@
     "lint": {
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"]
-    }
+    }, 
+    "stylelint": {
+          "executor": "@nrwl/linter:stylelint",
+          "options": {
+            "lintFilePatterns": ["src/**/styles.ts"]
+          }
+        }
   }
 }
