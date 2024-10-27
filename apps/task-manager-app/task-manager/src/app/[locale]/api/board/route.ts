@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { TBoard } from "@/widgets/board-switcher/types";
-import { createBoard, deleteBoard, getBoardByScopeId } from "../graphql";
+import { createBoard, getBoardByScopeId } from "../graphql";
 
 export async function GET(request: Request) {
     const url = new URL(request.url);
@@ -18,17 +18,5 @@ export async function GET(request: Request) {
 export async function POST(request: Request) {
     const board = await request.json() as Omit<TBoard,'id'>
     const data =  await createBoard(board, ['id', 'scopeId', 'name', 'background'])
-    return new Response(data);
-}
-
-export async function DELETE(request: Request) {
-    const body = await request.json() as Pick<TBoard,'id'>
-    if (!body.id){
-        return NextResponse.json({
-            message: 'Null board id'
-        }, {status: 400})
-    }
-    const data = await deleteBoard(Number(body.id))
-
     return new Response(data);
 }

@@ -1,13 +1,11 @@
 import _ from 'lodash';
 import { NextResponse } from 'next/server';
 import { TColumn } from '@/entities';
-import { updateColumn } from '../../graphql';
+import { deleteColumn, updateColumn } from '../../graphql';
 
 
-export async function PATCH(request: Request) {
-    const url = new URL(request.url);
-    const searchParams = new URLSearchParams(url.search);
-    const id = Number(searchParams.get("id")); 
+export async function PATCH(request: Request, route: { params: { id: string } }) {
+    const id = Number(route.params.id); 
     const column = await request.json() as Pick<TColumn,'name'>
     
     if (_.isNull(id)|| !column?.name ){
@@ -15,6 +13,27 @@ export async function PATCH(request: Request) {
             message: 'Null column name or id'
         }, {status: 400})
     }
-    const data = updateColumn({id, ...column}, ['id', 'name'])
-    return new Response(JSON.stringify(data));
+    const response = await updateColumn({id, ...column}, ['id', 'name'])
+    if (response.errors){
+        const errors = response.errors.map((error:{message:string}) => error.message)
+        return new Response(JSON.stringify(errors), {status: 400})
+    }
+    return new Response(JSON.stringify(response.data));
 }
+
+export async function DELETE(request: Request, route: { params: { id: string } }) {
+    const id = Number(route.params.id); 
+    
+    if (_.isNull(id) ){
+        return NextResponse.json({
+            message: 'Null column id'
+        }, {status: 400})
+    }
+    const response = await deleteColumn(id)
+    if (response.errors){
+        const errors = response.errors.map((error:{message:string}) => error.message)
+        return new Response(JSON.stringify(errors), {status: 400})
+    }
+    return new Response(JSON.stringify(response.data));
+}
+
