@@ -19,13 +19,36 @@ export const useChangeColumnName = (id: string) => {
             if (!response.ok) {
                 throw new Error('Network response was not ok')
             }
+            queryClient.invalidateQueries({ queryKey: ['boardContent'] })
+            return response.json()
+        },
+    })    
+    return  {
+        changeColumnName: mutate
+    }
+}
+
+export const useDeleteColumn= (id: string) => {
+    const {mutate} = useMutation<TColumn,void, void>({
+        mutationKey: ['changeColumnName'],
+        mutationFn: async (args) => { 
+            const response = await fetch((`/api/column/${id}`),
+                {
+                    method: 'DELETE',
+                    body: JSON.stringify({
+                        columnId: id
+                    })
+                })
+            if (!response.ok) {
+                throw new Error('Network response was not ok')
+            }
+            queryClient.invalidateQueries({ queryKey: ['boardContent'] })
             return response.json()
         },
     })
 
-    queryClient.invalidateQueries({ queryKey: ['boardContent'] })
     
     return  {
-        changeColumnName: mutate
+        deleteColumn: mutate
     }
 }

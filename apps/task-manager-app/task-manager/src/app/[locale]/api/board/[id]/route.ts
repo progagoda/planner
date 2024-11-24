@@ -1,22 +1,29 @@
 import _ from 'lodash';
 import { NextResponse } from 'next/server';
-import { deleteBoard, getCards, getColumns, updateBoard } from '../../graphql';
+import { deleteBoard, getCards, getColumns, updateBoard, getBoardById } from '../../graphql';
 import { TUpdateBoardArgs } from '../../graphql/types';
 
 export async function GET(request: Request, route: { params: { id: string } }) {
     const id = route.params.id;
+    const currentBoard = await getBoardById(id, ['id', 'name' , 'background'])
     const currentColumns = await getColumns(id, ['id', 'name' , 'boardId'])
-    
-    const result =  await Promise.all(currentColumns.map( async column => {
+
+    if (currentBoard.errors ||  currentColumns.errors){
+        return new Response(JSON.stringify(currentBoard.errors, currentColumns.errors ), {status: 400})
+    }
+    const content =  await Promise.all(currentColumns.data.map( async column => {
         const currentCards =  await getCards(String(column.id), ['id', 'name'])
         return {
             ...column,
-            items: currentCards
+            items: currentCards.toSorted((a,b)=>a.id-b.id)
         }
-    }))
-    
+    })).catch(e => new Response(JSON.stringify(e), {status: 400}))
+    const result = {
+        ...currentBoard.data,
+        items: Array.isArray(content) && content.toSorted((a,b)=>a.id-b.id),
+    }
     return new Response(JSON.stringify(result))
-}
+} 
 
 export async function DELETE(request: Request, route: { params: { id: string } }) {
     const id = route.params.id;

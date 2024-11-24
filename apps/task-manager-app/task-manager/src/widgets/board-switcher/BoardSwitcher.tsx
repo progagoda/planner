@@ -3,17 +3,17 @@ import { Empty, Flex, List, Form } from "antd"
 import _ from "lodash"
 import { useTranslations } from "next-intl"
 import { useState } from "react"
+import { TBoard } from "@/entities"
 import { Modal, Spinner, Typography, Button } from "@shared/ui"
 import { BoardCard } from "./_ui/BoardCard"
 import { CreateBoardForm } from "./_ui/CreateBoardForm"
 import { useCreateBoardMutation, useGetBoard } from "./api"
-import { TBoard } from "./types"
 
 export const BoardSwitcher = () => {
     const t = useTranslations('dashboard.boardSwitcher')
     const createBoardT = useTranslations('createBoard')
 
-    const {data: cardArrMock, isLoading} = useGetBoard();
+    const {data: boards, isLoading} = useGetBoard();
     const {createBoard, isLoading: isLoadingCreateBoard} = useCreateBoardMutation();
 
     const [isOpenCreateModal, setIsOpenCreateModal] = useState(false)
@@ -39,7 +39,7 @@ export const BoardSwitcher = () => {
     }
 
     const renderContent = () => {
-        if (_.isEmpty(cardArrMock)) {
+        if (_.isEmpty(boards)) {
             return (
                 <Flex flex={1} justify="center" align="center" vertical>
                     <Empty
@@ -57,7 +57,7 @@ export const BoardSwitcher = () => {
         return (
             <List
                 grid={{ gutter: 0, column: 2 }}
-                dataSource={cardArrMock}
+                dataSource={boards}
                 renderItem={(item) => (
                     <List.Item>
                         <BoardCard key={item.id} board={item}/>

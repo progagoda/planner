@@ -19,7 +19,7 @@ export const Header = (props: HeaderProps) => {
  
     const homeLink = userId ? homePageURL : welcomePageURL
     return (
-        <UIHeader style={{ height: '7.9vh' }} data-testid='header'>
+        <UIHeader style={{ height: '7vh' }} data-testid='header'>
             <Link href={homeLink}>
                 <StyledLogo>PLANNER</StyledLogo>
             </Link>

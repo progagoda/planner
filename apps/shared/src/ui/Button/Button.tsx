@@ -41,4 +41,7 @@ export const FormButton = styled(AntButton)`
 `
 export const IconButton = styled.div`
   cursor: pointer;
+  :hover {
+   backgroundColor: ${hoverBackgroundColor};
+  }
 `

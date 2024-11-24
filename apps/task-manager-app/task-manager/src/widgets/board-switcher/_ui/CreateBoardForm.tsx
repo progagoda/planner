@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl"
 import { FormInput, FormItem} from "@shared/ui"
 
 export const CreateBoardForm = () => {
-    const t = useTranslations('createBoard.form')
+    const t = useTranslations('board.createBoard.form')
 
     return (
         <>

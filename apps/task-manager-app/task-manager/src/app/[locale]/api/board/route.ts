@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { TBoard } from "@/widgets/board-switcher/types";
+import { TBoard } from "@/entities";
 import { createBoard, getBoardByScopeId } from "../graphql";
 
 export async function GET(request: Request) {

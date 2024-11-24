@@ -11,3 +11,10 @@ export type TColumn = {
     name: string
     boardId: number,
 }
+
+export type TBoard = {
+    background: string;
+    id: number;
+    name: string;
+    scopeId: string
+  }

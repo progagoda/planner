@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query"
 import { TApiBoardContent } from "./types";
 
 export const useGetBoardContent = (id: number) => {
-    const {data, isLoading} = useQuery<TApiBoardContent[]>({
+    const {data, isLoading} = useQuery<TApiBoardContent>({
         queryKey: ['boardContent'],
         queryFn: async () => { 
             const response = await fetch((`/api/board/${id}`))

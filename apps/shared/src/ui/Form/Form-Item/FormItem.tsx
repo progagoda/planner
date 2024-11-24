@@ -6,8 +6,8 @@ import { textColor } from '../../Colors';
 
 
 export const FormItem = styled(Form.Item)`
- &.ant-form-item .ant-form-item-label >label {
-      color: ${textColor};
-      font-weight: 600
+  .ant-form-item-label label {
+    color: ${textColor};
+    font-weight: 600;
   }
 `

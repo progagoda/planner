@@ -1,4 +1,4 @@
-import { TCard, TColumn } from "@/entities";
+import { TBoard, TCard, TColumn } from "@/entities";
 import { TCreateBoardArgs, TBoardResultFields, TColumnResultFields, TCreateColumnArgs, TCardResultFields, TCreateCardArgs, TUpdateCardArgs, TUpdateBoardArgs } from "./types";
 import { api } from "@/configs/api";
 
@@ -77,6 +77,22 @@ export const updateBoard = async (body: Pick<TColumn, 'id'> & TUpdateBoardArgs, 
     }).then(response => response.json())
     return {data,errors}
 }
+export const getBoardById = async (boardId: string, resultFields: TBoardResultFields) => {    
+    const query = `query {
+    getBoardById(id: ${boardId}) {
+     ${resultFields.join(' ')}
+  }
+}`;
+
+    const { data, errors } = await fetch(api, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ query })
+    }).then(response => response.json())
+    return {data: data.getBoardById, errors} ;
+}
 
 // Column queries
 export const createColumn = async(body: TCreateColumnArgs, resultFields: TColumnResultFields)=> {
@@ -117,21 +133,22 @@ export const updateColumn = async (body: Pick<TColumn, 'id'|'name'>,  resultFiel
     }).then(response => response.json())
     return {data,errors}
 }
-export const getColumns= async (boardId: string, resultFields: TColumnResultFields): Promise<TColumn[]> => {    
+export const getColumns = async (boardId: string, resultFields: TColumnResultFields) => {    
     const query = `query {
     getColumnsByBoardId(boardId: "${boardId}") {
      ${resultFields.join(' ')}
   }
 }`;
 
-    const { data } = await fetch(api, {
+    const { data, errors } = await fetch(api, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({ query })
     }).then(response => response.json())
-    return data.getColumnsByBoardId;
+
+    return {data: data.getColumnsByBoardId as TColumn[], errors};
 }
 export const deleteColumn = async (id: number)=>{
     const query = `
@@ -170,6 +187,7 @@ export const getCard = async (cardId: number, resultFields: TCardResultFields) =
 
     return {data: data?.getCardById, errors};
 }
+
 export const getCards = async (columnId: string, resultFields: TCardResultFields): Promise<TCard[]>=>{
     const query = `query {
         getCardsByColumnId(columnId: ${columnId}) {
@@ -177,24 +195,25 @@ export const getCards = async (columnId: string, resultFields: TCardResultFields
         }
       }`;
 
-    const { data, errors } = await fetch(api, {
+    const { data } = await fetch(api, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({ query })
     }).then(response => response.json())
-    console.log(errors)
+
     return data.getCardsByColumnId;
 }
+
 export const createCard = async(body: TCreateCardArgs, resultFields: TCardResultFields)=> {
     const query = `
- mutation createCard($card: CreateCardInput!) {
-    createCard(createCardInput: $card) {
-       ${resultFields.join(' ')}
-    }
-  }`;
-    
+        mutation createCard($card: CreateCardInput!) {
+            createCard(createCardInput: $card) {
+            ${resultFields.join(' ')}
+            }
+        }`;
+
     const {data, errors} = await fetch(api, {
         method: 'POST',
         headers: {

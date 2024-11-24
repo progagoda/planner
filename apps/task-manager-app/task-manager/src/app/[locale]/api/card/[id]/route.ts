@@ -5,6 +5,7 @@ import { TUpdateCardArgs } from "../../graphql/types";
 
 export async function GET(request: Request, route: { params: { id: string } }) {
     const id = route.params.id;
+    
     if (!id){
         return NextResponse.json({
             message: 'Null card id'
@@ -39,9 +40,9 @@ export async function PATCH(request: Request, route: { params: { id: string } })
     const id = Number(route.params.id); 
     const card = await request.json() as TUpdateCardArgs
     
-    if (_.isNull(id)|| !card?.name ){
+    if (_.isNull(id)){
         return NextResponse.json({
-            message: 'Null column name or id'
+            message: 'Null card id'
         }, {status: 400})
     }
     

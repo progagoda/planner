@@ -1,5 +1,4 @@
-import { TBoard } from "@/widgets/board-switcher";
-import { TCard, TColumn } from "@/entities";
+import { TBoard, TCard, TColumn } from "@/entities";
 
 export type TCreateArgs<T> = Omit<T, 'id'>
 

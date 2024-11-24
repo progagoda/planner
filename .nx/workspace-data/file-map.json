@@ -163,92 +163,92 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "package.json",
-        "hash": "12839375302913914253"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
-      },
-      {
-        "file": ".stylelintrc.json",
-        "hash": "2596421658158382111"
-      },
-      {
-        "file": "Dockerfile",
-        "hash": "10865948591799351723"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "1516305534525127298"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "3494843969422251966"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "16448050467312557263"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "14518493200127778559"
-      },
-      {
-        "file": "nx.json",
-        "hash": "8412939421186211182"
-      },
-      {
         "file": ".editorconfig",
         "hash": "5443105041930014821"
-      },
-      {
-        "file": "apps/task-manager-app/task-manager-e2e/example.spec.ts",
-        "hash": "12878176105986992307"
-      },
-      {
-        "file": ".eslintrc.json",
-        "hash": "12633303269698510362"
-      },
-      {
-        "file": "docker-compose.yml",
-        "hash": "2534964549081124388"
       },
       {
         "file": ".eslintignore",
         "hash": "7663861978715868291"
       },
       {
+        "file": ".eslintrc.json",
+        "hash": "12633303269698510362"
+      },
+      {
         "file": ".github/workflows/ci.yml",
         "hash": "1760477547327973859"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "17425123947026961272"
-      },
-      {
-        "file": "migrations.json",
-        "hash": "9101557850792483544"
-      },
-      {
-        "file": ".husky/pre-commit",
-        "hash": "7722884381018660862"
-      },
-      {
-        "file": "README.md",
-        "hash": "361435371320641272"
       },
       {
         "file": ".gitignore",
         "hash": "15716311104958585856"
       },
       {
+        "file": ".husky/pre-commit",
+        "hash": "7722884381018660862"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "16448050467312557263"
+      },
+      {
         "file": ".prettierrc",
         "hash": "9655271924123089479"
       },
       {
+        "file": ".stylelintrc.json",
+        "hash": "2596421658158382111"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "17425123947026961272"
+      },
+      {
+        "file": "Dockerfile",
+        "hash": "10865948591799351723"
+      },
+      {
+        "file": "README.md",
+        "hash": "361435371320641272"
+      },
+      {
+        "file": "apps/task-manager-app/task-manager-e2e/example.spec.ts",
+        "hash": "12878176105986992307"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "2534964549081124388"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3494843969422251966"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "9101557850792483544"
+      },
+      {
+        "file": "nx.json",
+        "hash": "8412939421186211182"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "1516305534525127298"
+      },
+      {
+        "file": "package.json",
+        "hash": "12839375302913914253"
+      },
+      {
         "file": "test-results/.last-run.json",
         "hash": "14694065644177241415"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "3465054784820201682"
       }
     ],
     "projectFileMap": {
@@ -322,7 +322,7 @@
         },
         {
           "file": "apps/shared/src/ui/Button/Button.tsx",
-          "hash": "17307840501185575722",
+          "hash": "14962497915927697003",
           "deps": [
             "npm:antd",
             "npm:styled-components"
@@ -354,7 +354,7 @@
         },
         {
           "file": "apps/shared/src/ui/Colors.ts",
-          "hash": "6036723741049190533",
+          "hash": "18020473537581674300",
           "deps": [
             "npm:@ant-design/colors",
             "npm:styled-theming"
@@ -410,7 +410,7 @@
         },
         {
           "file": "apps/shared/src/ui/Form/Form-Item/FormItem.tsx",
-          "hash": "3130249446041502255",
+          "hash": "13229700519973253465",
           "deps": [
             "npm:antd",
             "npm:styled-components"
@@ -439,6 +439,25 @@
         {
           "file": "apps/shared/src/ui/Header/index.ts",
           "hash": "9616032219909152583"
+        },
+        {
+          "file": "apps/shared/src/ui/InfoModal/InfoModal.stories.tsx",
+          "hash": "14617205995215217941",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/InfoModal/InfoModal.tsx",
+          "hash": "1677663619080572515",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/InfoModal/index.ts",
+          "hash": "14736182760873364676"
         },
         {
           "file": "apps/shared/src/ui/Input/Input.stories.tsx",
@@ -669,7 +688,7 @@
         },
         {
           "file": "apps/shared/src/ui/Typography/Typography.tsx",
-          "hash": "13218098517392191598",
+          "hash": "5156386281885922854",
           "deps": [
             "npm:antd",
             "npm:styled-components"
@@ -677,7 +696,7 @@
         },
         {
           "file": "apps/shared/src/ui/Typography/index.ts",
-          "hash": "7388499351014610760"
+          "hash": "8838863859782529256"
         },
         {
           "file": "apps/shared/src/ui/fonts/Exwayer.ttf",
@@ -696,7 +715,7 @@
         },
         {
           "file": "apps/shared/src/ui/index.ts",
-          "hash": "6985790234587429261",
+          "hash": "7372056393483061690",
           "deps": [
             "npm:@ant-design/icons",
             "npm:antd"
@@ -872,7 +891,7 @@
         },
         {
           "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/board/[id]/route.ts",
-          "hash": "14511489100414516080",
+          "hash": "19491870081583193",
           "deps": [
             "npm:lodash",
             "npm:next"
@@ -880,14 +899,14 @@
         },
         {
           "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/board/route.ts",
-          "hash": "3553895736071521201",
+          "hash": "13402897764497916764",
           "deps": [
             "npm:next"
           ]
         },
         {
           "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/card/[id]/route.ts",
-          "hash": "580191824598599680",
+          "hash": "4159075858850959935",
           "deps": [
             "npm:lodash",
             "npm:next"
@@ -895,7 +914,7 @@
         },
         {
           "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/card/route.ts",
-          "hash": "9794109596750060496",
+          "hash": "10206242823303841104",
           "deps": [
             "npm:next"
           ]
@@ -918,15 +937,11 @@
         },
         {
           "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/graphql/queries.ts",
-          "hash": "6117800457454653577"
+          "hash": "12254412192465629473"
         },
         {
           "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/graphql/types.ts",
-          "hash": "13820120528209068971"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/hello/route.ts",
-          "hash": "7117024283649463605"
+          "hash": "17665869446800120787"
         },
         {
           "file": "apps/task-manager-app/task-manager/src/app/[locale]/global.css",
@@ -969,15 +984,15 @@
         },
         {
           "file": "apps/task-manager-app/task-manager/src/configs/i18n/locales/en.json",
-          "hash": "1994330145506382555"
+          "hash": "6708308269258389109"
         },
         {
           "file": "apps/task-manager-app/task-manager/src/configs/i18n/locales/ru.json",
-          "hash": "15909879192368751384"
+          "hash": "13076922113762400678"
         },
         {
           "file": "apps/task-manager-app/task-manager/src/entities/board.ts",
-          "hash": "1262783084872968064"
+          "hash": "2773035342207432660"
         },
         {
           "file": "apps/task-manager-app/task-manager/src/entities/index.ts",
@@ -997,14 +1012,31 @@
         },
         {
           "file": "apps/task-manager-app/task-manager/src/features/board/Board.tsx",
-          "hash": "1774559106216657561",
+          "hash": "12980610183623416791",
           "deps": [
-            "npm:lodash"
+            "npm:lodash",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/board/_ui/Header.tsx",
+          "hash": "12161098761493347656"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/board/_ui/index.ts",
+          "hash": "7779082794949619939"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/board/_ui/styles.ts",
+          "hash": "6180319192845374112",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
           ]
         },
         {
           "file": "apps/task-manager-app/task-manager/src/features/board/api.ts",
-          "hash": "9792776419670012273",
+          "hash": "240303117063893450",
           "deps": [
             "npm:@tanstack/react-query"
           ]
@@ -1015,18 +1047,66 @@
         },
         {
           "file": "apps/task-manager-app/task-manager/src/features/board/styles.ts",
-          "hash": "11792714655163129407",
+          "hash": "12772822886606109359",
           "deps": [
             "npm:styled-components"
           ]
         },
         {
           "file": "apps/task-manager-app/task-manager/src/features/board/types.ts",
-          "hash": "11958610736603328881"
+          "hash": "5439262017150824417"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/card-info/_ui/CardTitle.tsx",
+          "hash": "17301167313470837653",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/card-info/_ui/Description.tsx",
+          "hash": "7174478532361061571",
+          "deps": [
+            "npm:next-intl"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/card-info/_ui/index.ts",
+          "hash": "14552444878769476688"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/card-info/_ui/styles.ts",
+          "hash": "8044543540576947520",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/card-info/api.ts",
+          "hash": "198030810713875937",
+          "deps": [
+            "npm:@tanstack/react-query"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/card-info/card-info.tsx",
+          "hash": "15032784927200596560",
+          "deps": [
+            "npm:lodash",
+            "npm:next-intl"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/card-info/index.ts",
+          "hash": "8889939342227046981"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/card-info/types.ts",
+          "hash": "715680388579172377"
         },
         {
           "file": "apps/task-manager-app/task-manager/src/features/index.ts",
-          "hash": "3375230946906959663"
+          "hash": "14693046555859009330"
         },
         {
           "file": "apps/task-manager-app/task-manager/src/middleware.ts",
@@ -1038,8 +1118,41 @@
           ]
         },
         {
+          "file": "apps/task-manager-app/task-manager/src/widgets/board-info/BoardInfoDrawer.tsx",
+          "hash": "13520416058283266894",
+          "deps": [
+            "npm:next-intl"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/board-info/BoardInfoForm.tsx",
+          "hash": "7739128515679321043",
+          "deps": [
+            "npm:next-intl",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/board-info/api.ts",
+          "hash": "13371734961106334712",
+          "deps": [
+            "npm:@tanstack/react-query"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/board-info/index.ts",
+          "hash": "5057928192690484420"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/board-info/types.ts",
+          "hash": "16080505410267974652",
+          "deps": [
+            "npm:antd"
+          ]
+        },
+        {
           "file": "apps/task-manager-app/task-manager/src/widgets/board-switcher/BoardSwitcher.tsx",
-          "hash": "9695352945706518374",
+          "hash": "7519144987340494815",
           "deps": [
             "npm:antd",
             "npm:lodash",
@@ -1049,7 +1162,7 @@
         },
         {
           "file": "apps/task-manager-app/task-manager/src/widgets/board-switcher/_ui/BoardCard.tsx",
-          "hash": "2611905227276348586",
+          "hash": "17475946361952396958",
           "deps": [
             "npm:@ant-design/icons",
             "npm:antd",
@@ -1059,7 +1172,7 @@
         },
         {
           "file": "apps/task-manager-app/task-manager/src/widgets/board-switcher/_ui/CreateBoardForm.tsx",
-          "hash": "11474163318342235246",
+          "hash": "7115347229330599661",
           "deps": [
             "npm:next-intl"
           ]
@@ -1073,7 +1186,7 @@
         },
         {
           "file": "apps/task-manager-app/task-manager/src/widgets/board-switcher/api.ts",
-          "hash": "13203414797187880903",
+          "hash": "5485940346442883126",
           "deps": [
             "npm:@clerk/nextjs",
             "npm:@tanstack/react-query"
@@ -1081,15 +1194,51 @@
         },
         {
           "file": "apps/task-manager-app/task-manager/src/widgets/board-switcher/index.ts",
-          "hash": "16429258682574686105"
+          "hash": "8140735641603108638"
         },
         {
-          "file": "apps/task-manager-app/task-manager/src/widgets/board-switcher/types.ts",
-          "hash": "17698645704610623397"
+          "file": "apps/task-manager-app/task-manager/src/widgets/card-create-card/CardCreateCard.tsx",
+          "hash": "5681315416732961342",
+          "deps": [
+            "npm:next-intl",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/card-create-card/api.ts",
+          "hash": "3845304882799742564",
+          "deps": [
+            "npm:@tanstack/react-query"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/card-create-card/index.ts",
+          "hash": "18443844891590228544"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/card-create-card/styles.ts",
+          "hash": "13924396849281238400",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/card-create-card/types.ts",
+          "hash": "13246509595773914348"
         },
         {
           "file": "apps/task-manager-app/task-manager/src/widgets/card/Card.tsx",
-          "hash": "12063400485462925231"
+          "hash": "14937946302373043268",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/card/api.ts",
+          "hash": "9652638053133867826",
+          "deps": [
+            "npm:@tanstack/react-query"
+          ]
         },
         {
           "file": "apps/task-manager-app/task-manager/src/widgets/card/index.ts",
@@ -1097,21 +1246,26 @@
         },
         {
           "file": "apps/task-manager-app/task-manager/src/widgets/card/styles.ts",
-          "hash": "16205386875169644473",
+          "hash": "13085509777336113144",
           "deps": [
             "npm:styled-components"
           ]
         },
         {
+          "file": "apps/task-manager-app/task-manager/src/widgets/card/types.ts",
+          "hash": "5760748611883485519"
+        },
+        {
           "file": "apps/task-manager-app/task-manager/src/widgets/column-card/ColumnCard.tsx",
-          "hash": "16730298286673652640",
+          "hash": "1361515068082720534",
           "deps": [
+            "npm:next-intl",
             "npm:react"
           ]
         },
         {
           "file": "apps/task-manager-app/task-manager/src/widgets/column-card/api.ts",
-          "hash": "7953628701327319206",
+          "hash": "5769472251066606182",
           "deps": [
             "npm:@tanstack/react-query"
           ]
@@ -1122,7 +1276,7 @@
         },
         {
           "file": "apps/task-manager-app/task-manager/src/widgets/column-card/styles.ts",
-          "hash": "5622945528529942620",
+          "hash": "6086765687291759938",
           "deps": [
             "npm:styled-components"
           ]
@@ -1132,8 +1286,38 @@
           "hash": "1073169377825102254"
         },
         {
+          "file": "apps/task-manager-app/task-manager/src/widgets/column-create-card/ColumnCreateCard.tsx",
+          "hash": "8782338550941974693",
+          "deps": [
+            "npm:next-intl",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/column-create-card/api.ts",
+          "hash": "18002219043691207961",
+          "deps": [
+            "npm:@tanstack/react-query"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/column-create-card/index.ts",
+          "hash": "14491186926510135432"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/column-create-card/styles.ts",
+          "hash": "8387210937117961178",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/column-create-card/types.ts",
+          "hash": "4672278182030342159"
+        },
+        {
           "file": "apps/task-manager-app/task-manager/src/widgets/header/Header.tsx",
-          "hash": "11018695663099389157",
+          "hash": "7475450087201215352",
           "deps": [
             "npm:@clerk/nextjs",
             "npm:next"
@@ -1170,7 +1354,7 @@
         },
         {
           "file": "apps/task-manager-app/task-manager/src/widgets/index.ts",
-          "hash": "16298083429270009957"
+          "hash": "9745077784544934482"
         },
         {
           "file": "apps/task-manager-app/task-manager/src/widgets/lang-switcher/LangSwitcher.tsx",

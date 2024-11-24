@@ -1,20 +1,22 @@
 'use client'
 
 import { EllipsisOutlined } from "@ant-design/icons"
-import { Typography, CardProps, Flex} from "antd"
+import { CardProps} from "antd"
 import { useRouter, usePathname } from 'next/navigation'
 import { useTranslations } from "next-intl"
-import { Popconfirm } from "@shared/ui"
+import { TBoard } from "@/entities"
+import { Popconfirm,Title, Flex} from "@shared/ui"
 import { useDeleteCardMutation } from "../api"
-import { TBoard } from "../types"
 import { StyledCard } from "./style"
 
 type TBoardCardProps = {
     board: TBoard
 } & CardProps
 export const BoardCard = (props: TBoardCardProps) => {
-    const t = useTranslations('boardCard')
+    const t = useTranslations('board.boardCard')
+
     const router = useRouter()
+
     const {deleteBoard} = useDeleteCardMutation()
 
     const currentPath = usePathname();
@@ -29,7 +31,7 @@ export const BoardCard = (props: TBoardCardProps) => {
     return (
         <StyledCard backgroundURL={props.board.background } {...props}>
             <Flex justify="space-between">
-                <Typography.Title level={5} style={{ margin: 0 }} onClick={handleClick}>{props.board.name}</Typography.Title>
+                <Title level={5} style={{ margin: 0 }} onClick={handleClick}>{props.board.name}</Title>
                 <Popconfirm
                     title={t('deletePopconfirm.title')}
                     description={t('deletePopconfirm.description')}

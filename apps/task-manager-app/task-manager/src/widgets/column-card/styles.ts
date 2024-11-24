@@ -3,4 +3,5 @@ import { Flex } from "@shared/ui";
 
 export const StyledFlex = styled(Flex)`
     padding: 5px;
+    width: 20vh;
  `

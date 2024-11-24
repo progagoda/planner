@@ -9,6 +9,7 @@ export const Colors = {
         text: generate('#434248')[5],
         textWarning: '#c91c00',
         placeholder: '#626168', 
+        overlap: '#fff',
         currentTheme: 'light'
     },
     dark: {
@@ -18,6 +19,7 @@ export const Colors = {
         text:  generate('#ececef')[5],
         textWarning: '#f57f6c',
         placeholder: '#bfbfc3',
+        overlap: '#28272d',
         currentTheme: 'dark'
     }
 }
@@ -55,6 +57,11 @@ export const warningTextColor = theme('mode', {
 export const placeholderColor = theme('mode', {
     light: Colors.light.placeholder,
     dark: Colors.dark.placeholder,
+});
+
+export const focusColor = theme('mode', {
+    light: Colors.light.overlap,
+    dark: Colors.dark.overlap,
 });
 
 export const currentTheme = theme('mode', {

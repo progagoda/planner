@@ -1,5 +1,10 @@
-import { TCard, TColumn } from "@/entities";
+import { TBoard, TCard, TColumn } from "@/entities";
 
-export type TApiBoardContent = TColumn & {
-    items: Pick<TCard, 'id'| 'name'>[]
+export type TCardMinInfo =  Pick<TCard, 'id'| 'name'>
+
+type TColumnContent = TColumn & {
+    items: TCardMinInfo[]
+}
+export type TApiBoardContent = TBoard & {
+    items: TColumnContent[]
 }

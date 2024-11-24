@@ -1,7 +1,7 @@
 import { useOrganization } from "@clerk/nextjs";
 import { useMutation, useQuery } from "@tanstack/react-query"
+import { TBoard } from "@/entities";
 import { queryClient } from "@shared/api";
-import { TBoard } from "./types"
 
 export const useGetBoard = () => {
     const {organization, isLoaded: isLoadedScope} = useOrganization();
@@ -43,6 +43,7 @@ export const useCreateBoardMutation = () => {
             if (!response.ok) {
                 throw new Error('Network response was not ok')
             }
+            queryClient.invalidateQueries({ queryKey: ['boards'] })
             return response.json()
         },
     })
@@ -50,7 +51,6 @@ export const useCreateBoardMutation = () => {
         return {isLoading: true}
     }
 
-    queryClient.invalidateQueries({ queryKey: ['boards'] })
 
     return  {
         isLoading: false,
@@ -73,9 +73,9 @@ export const useDeleteCardMutation = () => {
             if (!response.ok) {
                 throw new Error('Network response was not ok')
             }
+            queryClient.invalidateQueries({ queryKey: ['boards'] })
             return response.json()
         },
     })
-    queryClient.invalidateQueries({ queryKey: ['boards'] })
     return {deleteBoard: mutate}
 }
