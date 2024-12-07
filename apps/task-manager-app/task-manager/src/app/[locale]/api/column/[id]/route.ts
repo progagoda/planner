@@ -6,14 +6,15 @@ import { deleteColumn, updateColumn } from '../../graphql';
 
 export async function PATCH(request: Request, route: { params: { id: string } }) {
     const id = Number(route.params.id); 
-    const column = await request.json() as Pick<TColumn,'name'>
+    const column = await request.json() as Pick<TColumn, 'name' | 'positionIndex'>
     
-    if (_.isNull(id)|| !column?.name ){
+    if (_.isNull(id) && (!column?.name || !column?.positionIndex)){
         return NextResponse.json({
             message: 'Null column name or id'
         }, {status: 400})
     }
     const response = await updateColumn({id, ...column}, ['id', 'name'])
+
     if (response.errors){
         const errors = response.errors.map((error:{message:string}) => error.message)
         return new Response(JSON.stringify(errors), {status: 400})

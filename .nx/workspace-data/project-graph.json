@@ -18777,6 +18777,11 @@
       },
       {
         "source": "task-manager",
+        "target": "npm:@hello-pangea/dnd",
+        "type": "static"
+      },
+      {
+        "source": "task-manager",
         "target": "npm:@ant-design/icons",
         "type": "static"
       }

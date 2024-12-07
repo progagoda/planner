@@ -1,8 +1,8 @@
-import { TBoard, TCard, TColumn } from "@/entities";
-import { TCreateBoardArgs, TBoardResultFields, TColumnResultFields, TCreateColumnArgs, TCardResultFields, TCreateCardArgs, TUpdateCardArgs, TUpdateBoardArgs } from "./types";
+import { TCard, TColumn } from "@/entities";
+import { TCreateBoardArgs, TUpdateColumnArgs, TBoardResultFields, TColumnResultFields, TCreateColumnArgs, TCardResultFields, TCreateCardArgs, TUpdateCardArgs, TUpdateBoardArgs } from "./types";
 import { api } from "@/configs/api";
 
-// Board queries
+// #region Board queries
 export const createBoard = async (board: TCreateBoardArgs, resultFields: TBoardResultFields) => {
     const query = `
     mutation createBoard($board: CreateBoardInput!) {
@@ -93,8 +93,9 @@ export const getBoardById = async (boardId: string, resultFields: TBoardResultFi
     }).then(response => response.json())
     return {data: data.getBoardById, errors} ;
 }
+// #endregion
 
-// Column queries
+// #region Column queries
 export const createColumn = async(body: TCreateColumnArgs, resultFields: TColumnResultFields)=> {
     const query = `
   mutation createColumn($column: CreateColumnInput!) {
@@ -102,7 +103,7 @@ export const createColumn = async(body: TCreateColumnArgs, resultFields: TColumn
        ${resultFields.join(' ')}
     }
   }`;
-    const {data} = await fetch(api, {
+    const {data, errors } = await fetch(api, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -112,10 +113,9 @@ export const createColumn = async(body: TCreateColumnArgs, resultFields: TColumn
             variables: { column: body }
         })
     }).then(response => response.json())
-    
-    return JSON.stringify(data); 
+    return {data: data.createColumn, errors} 
 }
-export const updateColumn = async (body: Pick<TColumn, 'id'|'name'>,  resultFields: Omit<TColumnResultFields, 'boardId'>) => {
+export const updateColumn = async (body: TUpdateColumnArgs,  resultFields: Omit<TColumnResultFields, 'boardId'>) => {
     const query = `
         mutation ($column: UpdateColumnInput!) {
             updateColumn(updateColumnInput: $column) {
@@ -168,8 +168,9 @@ export const deleteColumn = async (id: number)=>{
   
     return {data: data.deleteColumn, errors, status}
 }
+// #endregion
 
-// Card queries
+// #region Card queries
 export const getCard = async (cardId: number, resultFields: TCardResultFields) => {
     const query = `query {
         getCardById(id: ${cardId}) {
@@ -264,3 +265,4 @@ export const updateCard = async (body: Pick<TCard, 'id'> & TUpdateCardArgs, resu
     }).then(response => response.json())
     return {data: data?.updateCard, errors}
 }
+// #endregion

@@ -6,21 +6,21 @@ import { TUpdateBoardArgs } from '../../graphql/types';
 export async function GET(request: Request, route: { params: { id: string } }) {
     const id = route.params.id;
     const currentBoard = await getBoardById(id, ['id', 'name' , 'background'])
-    const currentColumns = await getColumns(id, ['id', 'name' , 'boardId'])
+    const currentColumns = await getColumns(id, ['id', 'name' , 'boardId', 'positionIndex'])
 
     if (currentBoard.errors ||  currentColumns.errors){
         return new Response(JSON.stringify(currentBoard.errors, currentColumns.errors ), {status: 400})
     }
     const content =  await Promise.all(currentColumns.data.map( async column => {
-        const currentCards =  await getCards(String(column.id), ['id', 'name'])
+        const currentCards =  await getCards(String(column.id), ['id', 'name', 'positionIndex', 'columnId'])
         return {
             ...column,
-            items: currentCards.toSorted((a,b)=>a.id-b.id)
+            items: currentCards.toSorted((a,b)=>a.positionIndex-b.positionIndex)
         }
     })).catch(e => new Response(JSON.stringify(e), {status: 400}))
     const result = {
         ...currentBoard.data,
-        items: Array.isArray(content) && content.toSorted((a,b)=>a.id-b.id),
+        items: Array.isArray(content) && content.toSorted((a,b)=>a.positionIndex-b.positionIndex),
     }
     return new Response(JSON.stringify(result))
 } 
