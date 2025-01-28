@@ -163,92 +163,92 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "nx.json",
-        "hash": "8412939421186211182"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "9655271924123089479"
-      },
-      {
-        "file": "migrations.json",
-        "hash": "9101557850792483544"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
+        "file": "package.json",
+        "hash": "12839375302913914253"
       },
       {
         "file": "README.md",
         "hash": "361435371320641272"
       },
       {
-        "file": "jest.config.ts",
-        "hash": "3494843969422251966"
+        "file": "nx.json",
+        "hash": "8412939421186211182"
       },
       {
-        "file": ".github/workflows/ci.yml",
-        "hash": "2941473567380799605"
+        "file": ".prettierrc",
+        "hash": "9655271924123089479"
       },
       {
         "file": ".prettierignore",
         "hash": "16448050467312557263"
       },
       {
-        "file": ".gitignore",
-        "hash": "15716311104958585856"
-      },
-      {
-        "file": "apps/task-manager-app/task-manager-e2e/example.spec.ts",
-        "hash": "12878176105986992307"
-      },
-      {
-        "file": "test-results/.last-run.json",
-        "hash": "14694065644177241415"
-      },
-      {
-        "file": "Dockerfile",
-        "hash": "13142081845904338696"
-      },
-      {
-        "file": ".eslintrc.json",
-        "hash": "12633303269698510362"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "1516305534525127298"
-      },
-      {
-        "file": ".stylelintrc.json",
-        "hash": "2596421658158382111"
-      },
-      {
-        "file": "docker-compose.yml",
-        "hash": "2534964549081124388"
-      },
-      {
-        "file": "package.json",
-        "hash": "12839375302913914253"
-      },
-      {
-        "file": ".husky/pre-commit",
-        "hash": "7722884381018660862"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "17425123947026961272"
+        "file": "jest.config.ts",
+        "hash": "3494843969422251966"
       },
       {
         "file": ".eslintignore",
         "hash": "7663861978715868291"
       },
       {
+        "file": ".vscode/extensions.json",
+        "hash": "17425123947026961272"
+      },
+      {
+        "file": ".husky/pre-commit",
+        "hash": "7722884381018660862"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "15716311104958585856"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "9101557850792483544"
+      },
+      {
+        "file": "test-results/.last-run.json",
+        "hash": "14694065644177241415"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "1516305534525127298"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "12633303269698510362"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
         "file": "tsconfig.base.json",
         "hash": "3465054784820201682"
+      },
+      {
+        "file": ".github/workflows/ci.yml",
+        "hash": "2941473567380799605"
+      },
+      {
+        "file": ".stylelintrc.json",
+        "hash": "2596421658158382111"
+      },
+      {
+        "file": "Dockerfile",
+        "hash": "13142081845904338696"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "apps/task-manager-app/task-manager-e2e/example.spec.ts",
+        "hash": "12878176105986992307"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "2534964549081124388"
       }
     ],
     "projectFileMap": {
@@ -475,7 +475,7 @@
         },
         {
           "file": "apps/task-manager-app/task-manager/src/configs/i18n/index.ts",
-          "hash": "13396570455193565226",
+          "hash": "1725164300964946761",
           "deps": [
             "npm:next",
             "npm:next-intl"

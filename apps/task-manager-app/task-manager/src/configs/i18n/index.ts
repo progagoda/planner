@@ -12,7 +12,14 @@ export function isValidLocale(locale: unknown): locale is Locale {
 
 export default getRequestConfig(async (params) => {
     const localeParam = typeof params.locale === 'string' ? params.locale : 'en';
-    const baseLocale = new Intl.Locale(localeParam).baseName;
+    let baseLocale;
+
+    try {
+        baseLocale = new Intl.Locale(localeParam).baseName;
+    } catch {
+        console.error(`Invalid locale provided: ${localeParam}`);
+        baseLocale = 'en'; // Используем "en" при ошибке
+    }
   
     if (!isValidLocale(baseLocale)) notFound();
     const messageImports = {
