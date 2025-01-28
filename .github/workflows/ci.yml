@@ -54,7 +54,7 @@ jobs:
       # Set API-key
       - name: Set Clerk API Key
         run: echo "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=${{ secrets.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY }}" >> $GITHUB_ENV
-        - name: Set Clerk Private API Key
+      - name: Set Clerk Private API Key
         run: echo "CLERK_SECRET_KEY=${{ secrets.CLERK_SECRET_KEY }}" >> $GITHUB_ENV  
   
       # Run Playwright tests
