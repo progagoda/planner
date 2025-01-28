@@ -21,7 +21,7 @@ export const Header = (props: HeaderProps) => {
     return (
         <UIHeader style={{ height: '7vh' }} data-testid='header'>
             <Link href={homeLink}>
-                <StyledLogo>PLANNER</StyledLogo>
+                <StyledLogo data-testid='logo'>PLANNER</StyledLogo>
             </Link>
             <StyledFlexButton>
                 <LangSwitcher/>

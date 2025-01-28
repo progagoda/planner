@@ -22,7 +22,7 @@ export function LangSwitcher(props: LangSwitcherProps) {
     }
 
     return (
-        <Button data-testid= 'lang-switcher' onClick={handleLangSwitch}>{locale}</Button>
+        <Button data-testid='lang-switcher' onClick={handleLangSwitch}>{locale}</Button>
     );
 }
 

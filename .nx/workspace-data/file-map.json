@@ -21,7 +21,7 @@
     "next": "14.0.4",
     "next-auth": "^4.24.7",
     "next-i18next": "^15.3.0",
-    "next-intl": "^3.14.1",
+    "next-intl": "^3.26.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-i18next": "^14.1.2",
@@ -163,18 +163,6 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "package.json",
-        "hash": "12839375302913914253"
-      },
-      {
-        "file": "README.md",
-        "hash": "361435371320641272"
-      },
-      {
-        "file": "nx.json",
-        "hash": "8412939421186211182"
-      },
-      {
         "file": ".prettierrc",
         "hash": "9655271924123089479"
       },
@@ -183,28 +171,56 @@
         "hash": "16448050467312557263"
       },
       {
-        "file": "jest.config.ts",
-        "hash": "3494843969422251966"
-      },
-      {
         "file": ".eslintignore",
         "hash": "7663861978715868291"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "9101557850792483544"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "2534964549081124388"
       },
       {
         "file": ".vscode/extensions.json",
         "hash": "17425123947026961272"
       },
       {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "Dockerfile",
+        "hash": "13142081845904338696"
+      },
+      {
         "file": ".husky/pre-commit",
         "hash": "7722884381018660862"
       },
       {
-        "file": ".gitignore",
-        "hash": "15716311104958585856"
+        "file": ".stylelintrc.json",
+        "hash": "2596421658158382111"
       },
       {
-        "file": "migrations.json",
-        "hash": "9101557850792483544"
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": "apps/task-manager-app/task-manager-e2e/example.spec.ts",
+        "hash": "15059245673767361894"
+      },
+      {
+        "file": ".github/workflows/ci.yml",
+        "hash": "2941473567380799605"
+      },
+      {
+        "file": "README.md",
+        "hash": "361435371320641272"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "12633303269698510362"
       },
       {
         "file": "test-results/.last-run.json",
@@ -212,736 +228,30 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "1516305534525127298"
+        "hash": "6350137289316381381"
       },
       {
-        "file": ".eslintrc.json",
-        "hash": "12633303269698510362"
+        "file": "nx.json",
+        "hash": "8412939421186211182"
       },
       {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
+        "file": "jest.config.ts",
+        "hash": "3494843969422251966"
       },
       {
         "file": "tsconfig.base.json",
         "hash": "3465054784820201682"
       },
       {
-        "file": ".github/workflows/ci.yml",
-        "hash": "2941473567380799605"
+        "file": "package.json",
+        "hash": "12309230812398890799"
       },
       {
-        "file": ".stylelintrc.json",
-        "hash": "2596421658158382111"
-      },
-      {
-        "file": "Dockerfile",
-        "hash": "13142081845904338696"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
-      },
-      {
-        "file": "apps/task-manager-app/task-manager-e2e/example.spec.ts",
-        "hash": "12878176105986992307"
-      },
-      {
-        "file": "docker-compose.yml",
-        "hash": "2534964549081124388"
+        "file": ".gitignore",
+        "hash": "15716311104958585856"
       }
     ],
     "projectFileMap": {
-      "task-manager": [
-        {
-          "file": "apps/task-manager-app/task-manager/.eslintrc.json",
-          "hash": "1464356599319995997"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/index.d.ts",
-          "hash": "5498222895072842432"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/jest.config.ts",
-          "hash": "9451212084582550458"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/next-env.d.ts",
-          "hash": "5909181270615354023"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/next.config.js",
-          "hash": "14286108125811883838",
-          "deps": [
-            "npm:@nx/next",
-            "npm:next-intl"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/playwright.config.ts",
-          "hash": "13098263511374123221",
-          "deps": [
-            "npm:@nx/playwright",
-            "npm:@playwright/test"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/project.json",
-          "hash": "1895850758247362769"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/public/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/public/favicon.ico",
-          "hash": "9303420814833116677"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/public/locales/en/common.json",
-          "hash": "15965609330280689360"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/public/locales/ru/common.json",
-          "hash": "11394719323512137186"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/(private)/create-scope/page.tsx",
-          "hash": "16778986847838117427",
-          "deps": [
-            "npm:@clerk/nextjs",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/(private)/dashboard/[scope]/board/[id]/page.tsx",
-          "hash": "8462616639308177503"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/(private)/dashboard/[scope]/page.tsx",
-          "hash": "4968538652347862945",
-          "deps": [
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/(public)/sign-in/[[...sign-in]]/page.tsx",
-          "hash": "7240133134824582391",
-          "deps": [
-            "npm:@clerk/nextjs",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/(public)/sign-up/[[...sign-up]]/page.tsx",
-          "hash": "14830693974533217158",
-          "deps": [
-            "npm:@clerk/nextjs",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/(public)/welcome/page.tsx",
-          "hash": "16541392156977641029"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/_providers/app-provider.tsx",
-          "hash": "11991623229098219631",
-          "deps": [
-            "npm:@tanstack/react-query"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/_providers/shell-provider.tsx",
-          "hash": "14806802753034585740",
-          "deps": [
-            "npm:@clerk/localizations",
-            "npm:@clerk/nextjs",
-            "npm:@clerk/themes",
-            "npm:next-intl",
-            "npm:react",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/_providers/style-provider.tsx",
-          "hash": "15501582036930216446",
-          "deps": [
-            "npm:next",
-            "npm:react",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/board/[id]/route.ts",
-          "hash": "8773290624259890004",
-          "deps": [
-            "npm:lodash",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/board/route.ts",
-          "hash": "13402897764497916764",
-          "deps": [
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/card/[id]/route.ts",
-          "hash": "4159075858850959935",
-          "deps": [
-            "npm:lodash",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/card/reorder/route.ts",
-          "hash": "16164580296489917926",
-          "deps": [
-            "npm:lodash",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/card/route.ts",
-          "hash": "10206242823303841104",
-          "deps": [
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/column/[id]/route.ts",
-          "hash": "10238645499553025723",
-          "deps": [
-            "npm:lodash",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/column/reorder/route.ts",
-          "hash": "2403105332477184126",
-          "deps": [
-            "npm:lodash",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/column/route.ts",
-          "hash": "16559871251841345913"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/graphql/index.ts",
-          "hash": "7814835166367952371"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/graphql/queries.ts",
-          "hash": "12732130802771179376"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/graphql/types.ts",
-          "hash": "12567390718523396067"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/global.css",
-          "hash": "2063387531564215811"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/layout.tsx",
-          "hash": "6272855362522108199",
-          "deps": [
-            "npm:next",
-            "npm:next-intl"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/app/[locale]/page.tsx",
-          "hash": "13548083022786292410",
-          "deps": [
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/configs/api.ts",
-          "hash": "16956445386080007420"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/configs/constants/index.ts",
-          "hash": "3811919011566657888"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/configs/constants/urls.ts",
-          "hash": "8583143753751849530"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/configs/i18n/index.ts",
-          "hash": "1725164300964946761",
-          "deps": [
-            "npm:next",
-            "npm:next-intl"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/configs/i18n/locales/en.json",
-          "hash": "6708308269258389109"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/configs/i18n/locales/ru.json",
-          "hash": "13076922113762400678"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/entities/board.ts",
-          "hash": "10864536210202899983"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/entities/index.ts",
-          "hash": "8576425959951974950"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/features/auth/index.ts",
-          "hash": "2975783900280402699"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/features/auth/sign-in-button.tsx",
-          "hash": "8787795596764663332",
-          "deps": [
-            "npm:next",
-            "npm:next-intl"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/features/board/Board.tsx",
-          "hash": "3114567155032403206",
-          "deps": [
-            "npm:@hello-pangea/dnd",
-            "npm:lodash",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/features/board/_ui/Header.tsx",
-          "hash": "12161098761493347656"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/features/board/_ui/index.ts",
-          "hash": "7779082794949619939"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/features/board/_ui/styles.ts",
-          "hash": "6180319192845374112",
-          "deps": [
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/features/board/api.ts",
-          "hash": "1940898047169626372",
-          "deps": [
-            "npm:@tanstack/react-query"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/features/board/index.ts",
-          "hash": "15109973786679091670"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/features/board/styles.ts",
-          "hash": "12772822886606109359",
-          "deps": [
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/features/board/types.ts",
-          "hash": "5443483556185253366"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/features/card-info/_ui/CardTitle.tsx",
-          "hash": "17301167313470837653",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/features/card-info/_ui/Description.tsx",
-          "hash": "7174478532361061571",
-          "deps": [
-            "npm:next-intl"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/features/card-info/_ui/index.ts",
-          "hash": "14552444878769476688"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/features/card-info/_ui/styles.ts",
-          "hash": "8044543540576947520",
-          "deps": [
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/features/card-info/api.ts",
-          "hash": "198030810713875937",
-          "deps": [
-            "npm:@tanstack/react-query"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/features/card-info/card-info.tsx",
-          "hash": "15032784927200596560",
-          "deps": [
-            "npm:lodash",
-            "npm:next-intl"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/features/card-info/index.ts",
-          "hash": "8889939342227046981"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/features/card-info/types.ts",
-          "hash": "715680388579172377"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/features/index.ts",
-          "hash": "14693046555859009330"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/middleware.ts",
-          "hash": "2428447197723894899",
-          "deps": [
-            "npm:@clerk/nextjs",
-            "npm:next",
-            "npm:next-intl"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/board-info/BoardInfoDrawer.tsx",
-          "hash": "13520416058283266894",
-          "deps": [
-            "npm:next-intl"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/board-info/BoardInfoForm.tsx",
-          "hash": "7739128515679321043",
-          "deps": [
-            "npm:next-intl",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/board-info/api.ts",
-          "hash": "13371734961106334712",
-          "deps": [
-            "npm:@tanstack/react-query"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/board-info/index.ts",
-          "hash": "5057928192690484420"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/board-info/types.ts",
-          "hash": "16080505410267974652",
-          "deps": [
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/board-switcher/BoardSwitcher.tsx",
-          "hash": "7519144987340494815",
-          "deps": [
-            "npm:antd",
-            "npm:lodash",
-            "npm:next-intl",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/board-switcher/_ui/BoardCard.tsx",
-          "hash": "17475946361952396958",
-          "deps": [
-            "npm:@ant-design/icons",
-            "npm:antd",
-            "npm:next",
-            "npm:next-intl"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/board-switcher/_ui/CreateBoardForm.tsx",
-          "hash": "7115347229330599661",
-          "deps": [
-            "npm:next-intl"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/board-switcher/_ui/style.ts",
-          "hash": "15006230256103105993",
-          "deps": [
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/board-switcher/api.ts",
-          "hash": "5485940346442883126",
-          "deps": [
-            "npm:@clerk/nextjs",
-            "npm:@tanstack/react-query"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/board-switcher/index.ts",
-          "hash": "8140735641603108638"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/card-create-card/CardCreateCard.tsx",
-          "hash": "5681315416732961342",
-          "deps": [
-            "npm:next-intl",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/card-create-card/api.ts",
-          "hash": "3845304882799742564",
-          "deps": [
-            "npm:@tanstack/react-query"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/card-create-card/index.ts",
-          "hash": "18443844891590228544"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/card-create-card/styles.ts",
-          "hash": "13924396849281238400",
-          "deps": [
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/card-create-card/types.ts",
-          "hash": "13246509595773914348"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/card/Card.tsx",
-          "hash": "14937946302373043268",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/card/api.ts",
-          "hash": "9652638053133867826",
-          "deps": [
-            "npm:@tanstack/react-query"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/card/index.ts",
-          "hash": "11205385008712429159"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/card/styles.ts",
-          "hash": "13085509777336113144",
-          "deps": [
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/card/types.ts",
-          "hash": "5760748611883485519"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/column-card/ColumnCard.tsx",
-          "hash": "1361515068082720534",
-          "deps": [
-            "npm:next-intl",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/column-card/api.ts",
-          "hash": "5769472251066606182",
-          "deps": [
-            "npm:@tanstack/react-query"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/column-card/index.ts",
-          "hash": "1022372834710543670"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/column-card/styles.ts",
-          "hash": "6086765687291759938",
-          "deps": [
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/column-card/types.ts",
-          "hash": "1073169377825102254"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/column-create-card/ColumnCreateCard.tsx",
-          "hash": "8782338550941974693",
-          "deps": [
-            "npm:next-intl",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/column-create-card/api.ts",
-          "hash": "18002219043691207961",
-          "deps": [
-            "npm:@tanstack/react-query"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/column-create-card/index.ts",
-          "hash": "14491186926510135432"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/column-create-card/styles.ts",
-          "hash": "8387210937117961178",
-          "deps": [
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/column-create-card/types.ts",
-          "hash": "4672278182030342159"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/header/Header.tsx",
-          "hash": "7475450087201215352",
-          "deps": [
-            "npm:@clerk/nextjs",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/header/_ui/ScopeSwitcher.tsx",
-          "hash": "13744329678620760133",
-          "deps": [
-            "npm:@clerk/nextjs",
-            "npm:next",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/header/_ui/UserInfo.tsx",
-          "hash": "7000482656234407762",
-          "deps": [
-            "npm:@clerk/nextjs",
-            "npm:antd",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/header/index.ts",
-          "hash": "9616032219909152583"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/header/styles.ts",
-          "hash": "10171547647501801607",
-          "deps": [
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/index.ts",
-          "hash": "9745077784544934482"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/lang-switcher/LangSwitcher.tsx",
-          "hash": "9350282510696524073",
-          "deps": [
-            "npm:next",
-            "npm:next-intl",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/lang-switcher/config.ts",
-          "hash": "6772445359915073355",
-          "deps": [
-            "npm:next-intl"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/lang-switcher/index.ts",
-          "hash": "4523706567573077820"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/lang-switcher/navigation.ts",
-          "hash": "15418381489879423550",
-          "deps": [
-            "npm:next-intl"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/scope-switcher/ScopeSwitcher.tsx",
-          "hash": "14979997131797066074",
-          "deps": [
-            "npm:antd",
-            "npm:next",
-            "npm:next-intl"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/scope-switcher/_ui/ScopeList.tsx",
-          "hash": "17507992942729981942",
-          "deps": [
-            "npm:@clerk/nextjs",
-            "npm:next"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/scope-switcher/index.ts",
-          "hash": "3759005877732034762"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/welcome/WelcomeWidget.tsx",
-          "hash": "5556876517648154325",
-          "deps": [
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/welcome/_ui/AboutApp.tsx",
-          "hash": "7381110371267060531",
-          "deps": [
-            "npm:next-intl"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/welcome/_ui/Features.tsx",
-          "hash": "6740574047987730312",
-          "deps": [
-            "npm:next-intl"
-          ]
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/src/widgets/welcome/index.ts",
-          "hash": "10551151100763395927"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/tests/example.spec.ts",
-          "hash": "13160185347406617024"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/tsconfig.json",
-          "hash": "6624974907213205021"
-        },
-        {
-          "file": "apps/task-manager-app/task-manager/tsconfig.spec.json",
-          "hash": "16966071736247651268"
-        }
-      ],
       "shared": [
         {
           "file": "apps/shared/.babelrc",
@@ -1457,6 +767,695 @@
         {
           "file": "apps/shared/tsconfig.storybook.json",
           "hash": "9877693811502968150"
+        }
+      ],
+      "task-manager": [
+        {
+          "file": "apps/task-manager-app/task-manager/.eslintrc.json",
+          "hash": "1464356599319995997"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/index.d.ts",
+          "hash": "5498222895072842432"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/jest.config.ts",
+          "hash": "9451212084582550458"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/next-env.d.ts",
+          "hash": "5909181270615354023"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/next.config.js",
+          "hash": "14286108125811883838",
+          "deps": [
+            "npm:@nx/next",
+            "npm:next-intl"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/playwright.config.ts",
+          "hash": "13098263511374123221",
+          "deps": [
+            "npm:@nx/playwright",
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/project.json",
+          "hash": "1895850758247362769"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/public/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/public/locales/en/common.json",
+          "hash": "15965609330280689360"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/public/locales/ru/common.json",
+          "hash": "11394719323512137186"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/(private)/create-scope/page.tsx",
+          "hash": "16778986847838117427",
+          "deps": [
+            "npm:@clerk/nextjs",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/(private)/dashboard/[scope]/board/[id]/page.tsx",
+          "hash": "8462616639308177503"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/(private)/dashboard/[scope]/page.tsx",
+          "hash": "4968538652347862945",
+          "deps": [
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/(public)/sign-in/[[...sign-in]]/page.tsx",
+          "hash": "7240133134824582391",
+          "deps": [
+            "npm:@clerk/nextjs",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/(public)/sign-up/[[...sign-up]]/page.tsx",
+          "hash": "14830693974533217158",
+          "deps": [
+            "npm:@clerk/nextjs",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/(public)/welcome/page.tsx",
+          "hash": "16541392156977641029"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/_providers/app-provider.tsx",
+          "hash": "11991623229098219631",
+          "deps": [
+            "npm:@tanstack/react-query"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/_providers/shell-provider.tsx",
+          "hash": "14806802753034585740",
+          "deps": [
+            "npm:@clerk/localizations",
+            "npm:@clerk/nextjs",
+            "npm:@clerk/themes",
+            "npm:next-intl",
+            "npm:react",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/_providers/style-provider.tsx",
+          "hash": "15501582036930216446",
+          "deps": [
+            "npm:next",
+            "npm:react",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/board/[id]/route.ts",
+          "hash": "8773290624259890004",
+          "deps": [
+            "npm:lodash",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/board/route.ts",
+          "hash": "13402897764497916764",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/card/[id]/route.ts",
+          "hash": "4159075858850959935",
+          "deps": [
+            "npm:lodash",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/card/reorder/route.ts",
+          "hash": "16164580296489917926",
+          "deps": [
+            "npm:lodash",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/card/route.ts",
+          "hash": "10206242823303841104",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/column/[id]/route.ts",
+          "hash": "10238645499553025723",
+          "deps": [
+            "npm:lodash",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/column/reorder/route.ts",
+          "hash": "2403105332477184126",
+          "deps": [
+            "npm:lodash",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/column/route.ts",
+          "hash": "16559871251841345913"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/graphql/index.ts",
+          "hash": "7814835166367952371"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/graphql/queries.ts",
+          "hash": "12732130802771179376"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/api/graphql/types.ts",
+          "hash": "12567390718523396067"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/global.css",
+          "hash": "2063387531564215811"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/layout.tsx",
+          "hash": "6272855362522108199",
+          "deps": [
+            "npm:next",
+            "npm:next-intl"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/app/[locale]/page.tsx",
+          "hash": "13548083022786292410",
+          "deps": [
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/configs/api.ts",
+          "hash": "16956445386080007420"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/configs/constants/index.ts",
+          "hash": "3811919011566657888"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/configs/constants/urls.ts",
+          "hash": "8583143753751849530"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/configs/i18n/index.ts",
+          "hash": "5570185948623553744",
+          "deps": [
+            "npm:next-intl"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/configs/i18n/locales/en.json",
+          "hash": "6708308269258389109"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/configs/i18n/locales/ru.json",
+          "hash": "13076922113762400678"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/entities/board.ts",
+          "hash": "10864536210202899983"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/entities/index.ts",
+          "hash": "8576425959951974950"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/auth/index.ts",
+          "hash": "2975783900280402699"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/auth/sign-in-button.tsx",
+          "hash": "8787795596764663332",
+          "deps": [
+            "npm:next",
+            "npm:next-intl"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/board/Board.tsx",
+          "hash": "3114567155032403206",
+          "deps": [
+            "npm:@hello-pangea/dnd",
+            "npm:lodash",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/board/_ui/Header.tsx",
+          "hash": "12161098761493347656"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/board/_ui/index.ts",
+          "hash": "7779082794949619939"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/board/_ui/styles.ts",
+          "hash": "6180319192845374112",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/board/api.ts",
+          "hash": "1940898047169626372",
+          "deps": [
+            "npm:@tanstack/react-query"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/board/index.ts",
+          "hash": "15109973786679091670"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/board/styles.ts",
+          "hash": "12772822886606109359",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/board/types.ts",
+          "hash": "5443483556185253366"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/card-info/_ui/CardTitle.tsx",
+          "hash": "17301167313470837653",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/card-info/_ui/Description.tsx",
+          "hash": "7174478532361061571",
+          "deps": [
+            "npm:next-intl"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/card-info/_ui/index.ts",
+          "hash": "14552444878769476688"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/card-info/_ui/styles.ts",
+          "hash": "8044543540576947520",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/card-info/api.ts",
+          "hash": "198030810713875937",
+          "deps": [
+            "npm:@tanstack/react-query"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/card-info/card-info.tsx",
+          "hash": "15032784927200596560",
+          "deps": [
+            "npm:lodash",
+            "npm:next-intl"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/card-info/index.ts",
+          "hash": "8889939342227046981"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/card-info/types.ts",
+          "hash": "715680388579172377"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/features/index.ts",
+          "hash": "14693046555859009330"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/middleware.ts",
+          "hash": "2428447197723894899",
+          "deps": [
+            "npm:@clerk/nextjs",
+            "npm:next",
+            "npm:next-intl"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/board-info/BoardInfoDrawer.tsx",
+          "hash": "13520416058283266894",
+          "deps": [
+            "npm:next-intl"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/board-info/BoardInfoForm.tsx",
+          "hash": "7739128515679321043",
+          "deps": [
+            "npm:next-intl",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/board-info/api.ts",
+          "hash": "13371734961106334712",
+          "deps": [
+            "npm:@tanstack/react-query"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/board-info/index.ts",
+          "hash": "5057928192690484420"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/board-info/types.ts",
+          "hash": "16080505410267974652",
+          "deps": [
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/board-switcher/BoardSwitcher.tsx",
+          "hash": "7519144987340494815",
+          "deps": [
+            "npm:antd",
+            "npm:lodash",
+            "npm:next-intl",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/board-switcher/_ui/BoardCard.tsx",
+          "hash": "17475946361952396958",
+          "deps": [
+            "npm:@ant-design/icons",
+            "npm:antd",
+            "npm:next",
+            "npm:next-intl"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/board-switcher/_ui/CreateBoardForm.tsx",
+          "hash": "7115347229330599661",
+          "deps": [
+            "npm:next-intl"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/board-switcher/_ui/style.ts",
+          "hash": "15006230256103105993",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/board-switcher/api.ts",
+          "hash": "5485940346442883126",
+          "deps": [
+            "npm:@clerk/nextjs",
+            "npm:@tanstack/react-query"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/board-switcher/index.ts",
+          "hash": "8140735641603108638"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/card-create-card/CardCreateCard.tsx",
+          "hash": "5681315416732961342",
+          "deps": [
+            "npm:next-intl",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/card-create-card/api.ts",
+          "hash": "3845304882799742564",
+          "deps": [
+            "npm:@tanstack/react-query"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/card-create-card/index.ts",
+          "hash": "18443844891590228544"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/card-create-card/styles.ts",
+          "hash": "13924396849281238400",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/card-create-card/types.ts",
+          "hash": "13246509595773914348"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/card/Card.tsx",
+          "hash": "14937946302373043268",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/card/api.ts",
+          "hash": "9652638053133867826",
+          "deps": [
+            "npm:@tanstack/react-query"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/card/index.ts",
+          "hash": "11205385008712429159"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/card/styles.ts",
+          "hash": "13085509777336113144",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/card/types.ts",
+          "hash": "5760748611883485519"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/column-card/ColumnCard.tsx",
+          "hash": "1361515068082720534",
+          "deps": [
+            "npm:next-intl",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/column-card/api.ts",
+          "hash": "5769472251066606182",
+          "deps": [
+            "npm:@tanstack/react-query"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/column-card/index.ts",
+          "hash": "1022372834710543670"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/column-card/styles.ts",
+          "hash": "6086765687291759938",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/column-card/types.ts",
+          "hash": "1073169377825102254"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/column-create-card/ColumnCreateCard.tsx",
+          "hash": "8782338550941974693",
+          "deps": [
+            "npm:next-intl",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/column-create-card/api.ts",
+          "hash": "18002219043691207961",
+          "deps": [
+            "npm:@tanstack/react-query"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/column-create-card/index.ts",
+          "hash": "14491186926510135432"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/column-create-card/styles.ts",
+          "hash": "8387210937117961178",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/column-create-card/types.ts",
+          "hash": "4672278182030342159"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/header/Header.tsx",
+          "hash": "1766429934944767593",
+          "deps": [
+            "npm:@clerk/nextjs",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/header/_ui/ScopeSwitcher.tsx",
+          "hash": "13744329678620760133",
+          "deps": [
+            "npm:@clerk/nextjs",
+            "npm:next",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/header/_ui/UserInfo.tsx",
+          "hash": "7000482656234407762",
+          "deps": [
+            "npm:@clerk/nextjs",
+            "npm:antd",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/header/index.ts",
+          "hash": "9616032219909152583"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/header/styles.ts",
+          "hash": "10171547647501801607",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/index.ts",
+          "hash": "9745077784544934482"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/lang-switcher/LangSwitcher.tsx",
+          "hash": "6609571632203345974",
+          "deps": [
+            "npm:next",
+            "npm:next-intl",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/lang-switcher/config.ts",
+          "hash": "6772445359915073355",
+          "deps": [
+            "npm:next-intl"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/lang-switcher/index.ts",
+          "hash": "4523706567573077820"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/lang-switcher/navigation.ts",
+          "hash": "15418381489879423550",
+          "deps": [
+            "npm:next-intl"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/scope-switcher/ScopeSwitcher.tsx",
+          "hash": "14979997131797066074",
+          "deps": [
+            "npm:antd",
+            "npm:next",
+            "npm:next-intl"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/scope-switcher/_ui/ScopeList.tsx",
+          "hash": "17507992942729981942",
+          "deps": [
+            "npm:@clerk/nextjs",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/scope-switcher/index.ts",
+          "hash": "3759005877732034762"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/welcome/WelcomeWidget.tsx",
+          "hash": "5556876517648154325",
+          "deps": [
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/welcome/_ui/AboutApp.tsx",
+          "hash": "7381110371267060531",
+          "deps": [
+            "npm:next-intl"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/welcome/_ui/Features.tsx",
+          "hash": "6740574047987730312",
+          "deps": [
+            "npm:next-intl"
+          ]
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/src/widgets/welcome/index.ts",
+          "hash": "10551151100763395927"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/tests/example.spec.ts",
+          "hash": "13160185347406617024"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/tsconfig.json",
+          "hash": "6624974907213205021"
+        },
+        {
+          "file": "apps/task-manager-app/task-manager/tsconfig.spec.json",
+          "hash": "16966071736247651268"
         }
       ]
     }
