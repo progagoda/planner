@@ -163,612 +163,95 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "docker-compose.yml",
-        "hash": "2534964549081124388"
+        "file": "jest.config.ts",
+        "hash": "3494843969422251966"
       },
       {
         "file": "tsconfig.base.json",
         "hash": "3465054784820201682"
       },
       {
-        "file": ".gitignore",
-        "hash": "15716311104958585856"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "16448050467312557263"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "17425123947026961272"
-      },
-      {
-        "file": "migrations.json",
-        "hash": "9101557850792483544"
-      },
-      {
-        "file": ".eslintignore",
-        "hash": "7663861978715868291"
-      },
-      {
         "file": ".eslintrc.json",
         "hash": "12633303269698510362"
       },
       {
-        "file": "package.json",
-        "hash": "12309230812398890799"
+        "file": "docker-compose.yml",
+        "hash": "2534964549081124388"
       },
       {
         "file": ".github/workflows/ci.yml",
         "hash": "2444260281684812012"
       },
       {
-        "file": ".husky/pre-commit",
-        "hash": "7722884381018660862"
-      },
-      {
-        "file": "README.md",
-        "hash": "361435371320641272"
+        "file": "package.json",
+        "hash": "12309230812398890799"
       },
       {
         "file": "test-results/.last-run.json",
         "hash": "14694065644177241415"
       },
       {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
       },
       {
         "file": "apps/task-manager-app/task-manager-e2e/example.spec.ts",
         "hash": "15059245673767361894"
       },
       {
-        "file": ".stylelintrc.json",
-        "hash": "2596421658158382111"
+        "file": ".vscode/extensions.json",
+        "hash": "17425123947026961272"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "15716311104958585856"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "9101557850792483544"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
       },
       {
         "file": "nx.json",
         "hash": "8412939421186211182"
       },
       {
-        "file": "package-lock.json",
-        "hash": "6350137289316381381"
-      },
-      {
         "file": ".prettierrc",
         "hash": "9655271924123089479"
       },
       {
-        "file": "jest.config.ts",
-        "hash": "3494843969422251966"
+        "file": ".prettierignore",
+        "hash": "16448050467312557263"
+      },
+      {
+        "file": ".stylelintrc.json",
+        "hash": "2596421658158382111"
+      },
+      {
+        "file": "Dockerfile",
+        "hash": "494579451542854271"
+      },
+      {
+        "file": "README.md",
+        "hash": "361435371320641272"
       },
       {
         "file": "jest.preset.js",
         "hash": "9430166341120122740"
       },
       {
-        "file": "Dockerfile",
-        "hash": "17566766678224776738"
+        "file": ".husky/pre-commit",
+        "hash": "7722884381018660862"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "6350137289316381381"
       }
     ],
     "projectFileMap": {
-      "shared": [
-        {
-          "file": "apps/shared/.babelrc",
-          "hash": "5712476190361238632"
-        },
-        {
-          "file": "apps/shared/.eslintrc.json",
-          "hash": "8889969118281392421"
-        },
-        {
-          "file": "apps/shared/.storybook/main.ts",
-          "hash": "14168021032904508213",
-          "deps": [
-            "npm:@nx/vite",
-            "npm:@storybook/react-vite",
-            "npm:vite"
-          ]
-        },
-        {
-          "file": "apps/shared/README.md",
-          "hash": "11453672666776903667"
-        },
-        {
-          "file": "apps/shared/package-lock.json",
-          "hash": "10101599225378612712"
-        },
-        {
-          "file": "apps/shared/package.json",
-          "hash": "15657591216741665023"
-        },
-        {
-          "file": "apps/shared/project.json",
-          "hash": "7568022570145267689"
-        },
-        {
-          "file": "apps/shared/src/api/index.ts",
-          "hash": "1846885171202872514"
-        },
-        {
-          "file": "apps/shared/src/api/query-client.ts",
-          "hash": "10620083695387085742",
-          "deps": [
-            "npm:@tanstack/react-query"
-          ]
-        },
-        {
-          "file": "apps/shared/src/configs/index.ts",
-          "hash": "1820187397727704904"
-        },
-        {
-          "file": "apps/shared/src/configs/private/private.ts",
-          "hash": "12290725939172979526",
-          "deps": [
-            "npm:zod"
-          ]
-        },
-        {
-          "file": "apps/shared/src/index.ts",
-          "hash": "4825720512757508474"
-        },
-        {
-          "file": "apps/shared/src/ui/Button/Button.stories.tsx",
-          "hash": "11061982623947340497",
-          "deps": [
-            "npm:@storybook/react",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Button/Button.tsx",
-          "hash": "14962497915927697003",
-          "deps": [
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Button/index.ts",
-          "hash": "5620782284535044389"
-        },
-        {
-          "file": "apps/shared/src/ui/Card/Card.stories.tsx",
-          "hash": "14101389901080215605",
-          "deps": [
-            "npm:@storybook/react",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Card/Card.tsx",
-          "hash": "17666052005694043042",
-          "deps": [
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Card/index.ts",
-          "hash": "11205385008712429159"
-        },
-        {
-          "file": "apps/shared/src/ui/Colors.ts",
-          "hash": "18020473537581674300",
-          "deps": [
-            "npm:@ant-design/colors",
-            "npm:styled-theming"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Drawer/Drawer.stories.tsx",
-          "hash": "2028876545414624123",
-          "deps": [
-            "npm:@storybook/react",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Drawer/Drawer.tsx",
-          "hash": "11065260582597405032",
-          "deps": [
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Drawer/index.ts",
-          "hash": "7826475962386886471"
-        },
-        {
-          "file": "apps/shared/src/ui/Dropdown/Dropdown.stories.tsx",
-          "hash": "12898454013057186473",
-          "deps": [
-            "npm:@storybook/react",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Dropdown/Dropdown.tsx",
-          "hash": "9618743859658419978",
-          "deps": [
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Dropdown/index.ts",
-          "hash": "6156988848770920186"
-        },
-        {
-          "file": "apps/shared/src/ui/Form/Form-Item/FormItem.stories.tsx",
-          "hash": "2818501492396094497",
-          "deps": [
-            "npm:@storybook/react",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Form/Form-Item/FormItem.tsx",
-          "hash": "13229700519973253465",
-          "deps": [
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Form/index.ts",
-          "hash": "15733583689923839309"
-        },
-        {
-          "file": "apps/shared/src/ui/Header/Header.stories.tsx",
-          "hash": "10950434058742865458",
-          "deps": [
-            "npm:@storybook/react",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Header/Header.tsx",
-          "hash": "15697792300403402829",
-          "deps": [
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Header/index.ts",
-          "hash": "9616032219909152583"
-        },
-        {
-          "file": "apps/shared/src/ui/InfoModal/InfoModal.stories.tsx",
-          "hash": "14617205995215217941",
-          "deps": [
-            "npm:@storybook/react",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/InfoModal/InfoModal.tsx",
-          "hash": "1677663619080572515",
-          "deps": [
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/InfoModal/index.ts",
-          "hash": "14736182760873364676"
-        },
-        {
-          "file": "apps/shared/src/ui/Input/Input.stories.tsx",
-          "hash": "355621152368822317",
-          "deps": [
-            "npm:@storybook/react",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Input/Input.tsx",
-          "hash": "8812758814725069672",
-          "deps": [
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Input/index.ts",
-          "hash": "10518492092107909718"
-        },
-        {
-          "file": "apps/shared/src/ui/Layout/Layout.stories.tsx",
-          "hash": "13725409849043994233",
-          "deps": [
-            "npm:@storybook/react",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Layout/Layout.tsx",
-          "hash": "3990376260095146666",
-          "deps": [
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Layout/index.ts",
-          "hash": "3449358076682611267"
-        },
-        {
-          "file": "apps/shared/src/ui/Logo/Logo.stories.tsx",
-          "hash": "6577101492974376829",
-          "deps": [
-            "npm:@storybook/react",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Logo/Logo.tsx",
-          "hash": "1765806120169247106",
-          "deps": [
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Logo/index.ts",
-          "hash": "4743842813301525000"
-        },
-        {
-          "file": "apps/shared/src/ui/Menu/Menu.stories.tsx",
-          "hash": "6666361502910066859",
-          "deps": [
-            "npm:@storybook/react",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Menu/Menu.tsx",
-          "hash": "14048424894616274765",
-          "deps": [
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Menu/index.ts",
-          "hash": "4657632053589057663"
-        },
-        {
-          "file": "apps/shared/src/ui/Modal/Modal.spec.tsx",
-          "hash": "11766915741729095314",
-          "deps": [
-            "npm:@testing-library/react"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Modal/Modal.stories.tsx",
-          "hash": "5286107268574465915",
-          "deps": [
-            "npm:@storybook/react",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Modal/Modal.tsx",
-          "hash": "10141628022520686129",
-          "deps": [
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Modal/index.ts",
-          "hash": "17308901243945715596"
-        },
-        {
-          "file": "apps/shared/src/ui/Popconfirm/Popconfirm.stories.tsx",
-          "hash": "11762372029651862322",
-          "deps": [
-            "npm:@storybook/react",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Popconfirm/Popconfirm.tsx",
-          "hash": "6289562332223447727",
-          "deps": [
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Popconfirm/index.ts",
-          "hash": "3668581451837373443"
-        },
-        {
-          "file": "apps/shared/src/ui/Scrollable/Scrollable.tsx",
-          "hash": "5061884256862346595",
-          "deps": [
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Scrollable/index.ts",
-          "hash": "16319879744502528331"
-        },
-        {
-          "file": "apps/shared/src/ui/Select/Select.stories.tsx",
-          "hash": "1421507307548582110",
-          "deps": [
-            "npm:@storybook/react",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Select/Select.tsx",
-          "hash": "15005975307016254371",
-          "deps": [
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Select/index.ts",
-          "hash": "12394605763219841206"
-        },
-        {
-          "file": "apps/shared/src/ui/Sider/Sider.stories.tsx",
-          "hash": "4702673516076222959",
-          "deps": [
-            "npm:@storybook/react",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Sider/Sider.tsx",
-          "hash": "17643343367557755200",
-          "deps": [
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Sider/index.ts",
-          "hash": "590130895586002227"
-        },
-        {
-          "file": "apps/shared/src/ui/Spinner/Spinner.stories.tsx",
-          "hash": "17614921885528177856",
-          "deps": [
-            "npm:@storybook/react",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Spinner/Spinner.tsx",
-          "hash": "13970993982324318111",
-          "deps": [
-            "npm:@ant-design/icons",
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Spinner/index.ts",
-          "hash": "9898119554544851867"
-        },
-        {
-          "file": "apps/shared/src/ui/TimeRangePicker/TimeRangePicker.stories.tsx",
-          "hash": "14813668554602721201",
-          "deps": [
-            "npm:@storybook/react",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/TimeRangePicker/TimeRangePicker.tsx",
-          "hash": "16903753288925006140",
-          "deps": [
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/TimeRangePicker/index.ts",
-          "hash": "3131029344230167020"
-        },
-        {
-          "file": "apps/shared/src/ui/Typography/Typography.stories.tsx",
-          "hash": "16945838320280469057",
-          "deps": [
-            "npm:@storybook/react",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Typography/Typography.tsx",
-          "hash": "5156386281885922854",
-          "deps": [
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Typography/index.ts",
-          "hash": "8838863859782529256"
-        },
-        {
-          "file": "apps/shared/src/ui/fonts/Exwayer.ttf",
-          "hash": "13375322514223718106"
-        },
-        {
-          "file": "apps/shared/src/ui/fonts/fonts.d.ts",
-          "hash": "15535112680019490926"
-        },
-        {
-          "file": "apps/shared/src/ui/fonts/index.ts",
-          "hash": "18221225342798890364",
-          "deps": [
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/index.ts",
-          "hash": "7372056393483061690",
-          "deps": [
-            "npm:@ant-design/icons",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Сalendar/Calendar.tsx",
-          "hash": "15232028780266715701",
-          "deps": [
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "apps/shared/src/ui/Сalendar/index.ts",
-          "hash": "16254631018997004442"
-        },
-        {
-          "file": "apps/shared/src/ui/Сalendar/Сalendar.stories.tsx",
-          "hash": "8044935881964427210",
-          "deps": [
-            "npm:@storybook/react",
-            "npm:antd"
-          ]
-        },
-        {
-          "file": "apps/shared/src/utils/helpers.ts",
-          "hash": "8812959674477514946"
-        },
-        {
-          "file": "apps/shared/src/utils/index.ts",
-          "hash": "7026339912922341815"
-        },
-        {
-          "file": "apps/shared/src/utils/react.tsx",
-          "hash": "17363283253124882221",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "apps/shared/tsconfig.json",
-          "hash": "1982231018022476059"
-        },
-        {
-          "file": "apps/shared/tsconfig.lib.json",
-          "hash": "319377551293171136"
-        },
-        {
-          "file": "apps/shared/tsconfig.storybook.json",
-          "hash": "9877693811502968150"
-        }
-      ],
       "task-manager": [
         {
           "file": "apps/task-manager-app/task-manager/.eslintrc.json",
@@ -1456,6 +939,523 @@
         {
           "file": "apps/task-manager-app/task-manager/tsconfig.spec.json",
           "hash": "16966071736247651268"
+        }
+      ],
+      "shared": [
+        {
+          "file": "apps/shared/.babelrc",
+          "hash": "5712476190361238632"
+        },
+        {
+          "file": "apps/shared/.eslintrc.json",
+          "hash": "8889969118281392421"
+        },
+        {
+          "file": "apps/shared/.storybook/main.ts",
+          "hash": "14168021032904508213",
+          "deps": [
+            "npm:@nx/vite",
+            "npm:@storybook/react-vite",
+            "npm:vite"
+          ]
+        },
+        {
+          "file": "apps/shared/README.md",
+          "hash": "11453672666776903667"
+        },
+        {
+          "file": "apps/shared/package-lock.json",
+          "hash": "10101599225378612712"
+        },
+        {
+          "file": "apps/shared/package.json",
+          "hash": "15657591216741665023"
+        },
+        {
+          "file": "apps/shared/project.json",
+          "hash": "7568022570145267689"
+        },
+        {
+          "file": "apps/shared/src/api/index.ts",
+          "hash": "1846885171202872514"
+        },
+        {
+          "file": "apps/shared/src/api/query-client.ts",
+          "hash": "10620083695387085742",
+          "deps": [
+            "npm:@tanstack/react-query"
+          ]
+        },
+        {
+          "file": "apps/shared/src/configs/index.ts",
+          "hash": "1820187397727704904"
+        },
+        {
+          "file": "apps/shared/src/configs/private/private.ts",
+          "hash": "12290725939172979526",
+          "deps": [
+            "npm:zod"
+          ]
+        },
+        {
+          "file": "apps/shared/src/index.ts",
+          "hash": "4825720512757508474"
+        },
+        {
+          "file": "apps/shared/src/ui/Button/Button.stories.tsx",
+          "hash": "11061982623947340497",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Button/Button.tsx",
+          "hash": "14962497915927697003",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Button/index.ts",
+          "hash": "5620782284535044389"
+        },
+        {
+          "file": "apps/shared/src/ui/Card/Card.stories.tsx",
+          "hash": "14101389901080215605",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Card/Card.tsx",
+          "hash": "17666052005694043042",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Card/index.ts",
+          "hash": "11205385008712429159"
+        },
+        {
+          "file": "apps/shared/src/ui/Colors.ts",
+          "hash": "18020473537581674300",
+          "deps": [
+            "npm:@ant-design/colors",
+            "npm:styled-theming"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Drawer/Drawer.stories.tsx",
+          "hash": "2028876545414624123",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Drawer/Drawer.tsx",
+          "hash": "11065260582597405032",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Drawer/index.ts",
+          "hash": "7826475962386886471"
+        },
+        {
+          "file": "apps/shared/src/ui/Dropdown/Dropdown.stories.tsx",
+          "hash": "12898454013057186473",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Dropdown/Dropdown.tsx",
+          "hash": "9618743859658419978",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Dropdown/index.ts",
+          "hash": "6156988848770920186"
+        },
+        {
+          "file": "apps/shared/src/ui/Form/Form-Item/FormItem.stories.tsx",
+          "hash": "2818501492396094497",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Form/Form-Item/FormItem.tsx",
+          "hash": "13229700519973253465",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Form/index.ts",
+          "hash": "15733583689923839309"
+        },
+        {
+          "file": "apps/shared/src/ui/Header/Header.stories.tsx",
+          "hash": "10950434058742865458",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Header/Header.tsx",
+          "hash": "15697792300403402829",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Header/index.ts",
+          "hash": "9616032219909152583"
+        },
+        {
+          "file": "apps/shared/src/ui/InfoModal/InfoModal.stories.tsx",
+          "hash": "14617205995215217941",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/InfoModal/InfoModal.tsx",
+          "hash": "1677663619080572515",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/InfoModal/index.ts",
+          "hash": "14736182760873364676"
+        },
+        {
+          "file": "apps/shared/src/ui/Input/Input.stories.tsx",
+          "hash": "355621152368822317",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Input/Input.tsx",
+          "hash": "8812758814725069672",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Input/index.ts",
+          "hash": "10518492092107909718"
+        },
+        {
+          "file": "apps/shared/src/ui/Layout/Layout.stories.tsx",
+          "hash": "13725409849043994233",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Layout/Layout.tsx",
+          "hash": "3990376260095146666",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Layout/index.ts",
+          "hash": "3449358076682611267"
+        },
+        {
+          "file": "apps/shared/src/ui/Logo/Logo.stories.tsx",
+          "hash": "6577101492974376829",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Logo/Logo.tsx",
+          "hash": "1765806120169247106",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Logo/index.ts",
+          "hash": "4743842813301525000"
+        },
+        {
+          "file": "apps/shared/src/ui/Menu/Menu.stories.tsx",
+          "hash": "6666361502910066859",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Menu/Menu.tsx",
+          "hash": "14048424894616274765",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Menu/index.ts",
+          "hash": "4657632053589057663"
+        },
+        {
+          "file": "apps/shared/src/ui/Modal/Modal.spec.tsx",
+          "hash": "11766915741729095314",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Modal/Modal.stories.tsx",
+          "hash": "5286107268574465915",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Modal/Modal.tsx",
+          "hash": "10141628022520686129",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Modal/index.ts",
+          "hash": "17308901243945715596"
+        },
+        {
+          "file": "apps/shared/src/ui/Popconfirm/Popconfirm.stories.tsx",
+          "hash": "11762372029651862322",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Popconfirm/Popconfirm.tsx",
+          "hash": "6289562332223447727",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Popconfirm/index.ts",
+          "hash": "3668581451837373443"
+        },
+        {
+          "file": "apps/shared/src/ui/Scrollable/Scrollable.tsx",
+          "hash": "5061884256862346595",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Scrollable/index.ts",
+          "hash": "16319879744502528331"
+        },
+        {
+          "file": "apps/shared/src/ui/Select/Select.stories.tsx",
+          "hash": "1421507307548582110",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Select/Select.tsx",
+          "hash": "15005975307016254371",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Select/index.ts",
+          "hash": "12394605763219841206"
+        },
+        {
+          "file": "apps/shared/src/ui/Sider/Sider.stories.tsx",
+          "hash": "4702673516076222959",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Sider/Sider.tsx",
+          "hash": "17643343367557755200",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Sider/index.ts",
+          "hash": "590130895586002227"
+        },
+        {
+          "file": "apps/shared/src/ui/Spinner/Spinner.stories.tsx",
+          "hash": "17614921885528177856",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Spinner/Spinner.tsx",
+          "hash": "13970993982324318111",
+          "deps": [
+            "npm:@ant-design/icons",
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Spinner/index.ts",
+          "hash": "9898119554544851867"
+        },
+        {
+          "file": "apps/shared/src/ui/TimeRangePicker/TimeRangePicker.stories.tsx",
+          "hash": "14813668554602721201",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/TimeRangePicker/TimeRangePicker.tsx",
+          "hash": "16903753288925006140",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/TimeRangePicker/index.ts",
+          "hash": "3131029344230167020"
+        },
+        {
+          "file": "apps/shared/src/ui/Typography/Typography.stories.tsx",
+          "hash": "16945838320280469057",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Typography/Typography.tsx",
+          "hash": "5156386281885922854",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Typography/index.ts",
+          "hash": "8838863859782529256"
+        },
+        {
+          "file": "apps/shared/src/ui/fonts/Exwayer.ttf",
+          "hash": "13375322514223718106"
+        },
+        {
+          "file": "apps/shared/src/ui/fonts/fonts.d.ts",
+          "hash": "15535112680019490926"
+        },
+        {
+          "file": "apps/shared/src/ui/fonts/index.ts",
+          "hash": "18221225342798890364",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/index.ts",
+          "hash": "7372056393483061690",
+          "deps": [
+            "npm:@ant-design/icons",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Сalendar/Calendar.tsx",
+          "hash": "15232028780266715701",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "apps/shared/src/ui/Сalendar/index.ts",
+          "hash": "16254631018997004442"
+        },
+        {
+          "file": "apps/shared/src/ui/Сalendar/Сalendar.stories.tsx",
+          "hash": "8044935881964427210",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:antd"
+          ]
+        },
+        {
+          "file": "apps/shared/src/utils/helpers.ts",
+          "hash": "8812959674477514946"
+        },
+        {
+          "file": "apps/shared/src/utils/index.ts",
+          "hash": "7026339912922341815"
+        },
+        {
+          "file": "apps/shared/src/utils/react.tsx",
+          "hash": "17363283253124882221",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/shared/tsconfig.json",
+          "hash": "1982231018022476059"
+        },
+        {
+          "file": "apps/shared/tsconfig.lib.json",
+          "hash": "319377551293171136"
+        },
+        {
+          "file": "apps/shared/tsconfig.storybook.json",
+          "hash": "9877693811502968150"
         }
       ]
     }
