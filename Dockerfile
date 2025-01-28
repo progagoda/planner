@@ -2,7 +2,7 @@ FROM node:18.17.0-alpine AS builder
 WORKDIR /app
 COPY /package.json ./
 RUN npm i
-COPY . .
+COPY ./apps ./apps
 RUN  npx nx reset && npm run build
 
 FROM node:18.17.0-alpine
