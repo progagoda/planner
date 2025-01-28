@@ -163,6 +163,26 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+        "file": "docker-compose.yml",
+        "hash": "2534964549081124388"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "3465054784820201682"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "15716311104958585856"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "16448050467312557263"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "17425123947026961272"
+      },
+      {
         "file": "migrations.json",
         "hash": "9101557850792483544"
       },
@@ -171,16 +191,36 @@
         "hash": "7663861978715868291"
       },
       {
-        "file": ".prettierignore",
-        "hash": "16448050467312557263"
+        "file": ".eslintrc.json",
+        "hash": "12633303269698510362"
       },
       {
-        "file": ".prettierrc",
-        "hash": "9655271924123089479"
+        "file": "package.json",
+        "hash": "12309230812398890799"
+      },
+      {
+        "file": ".github/workflows/ci.yml",
+        "hash": "2444260281684812012"
+      },
+      {
+        "file": ".husky/pre-commit",
+        "hash": "7722884381018660862"
+      },
+      {
+        "file": "README.md",
+        "hash": "361435371320641272"
       },
       {
         "file": "test-results/.last-run.json",
         "hash": "14694065644177241415"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": "apps/task-manager-app/task-manager-e2e/example.spec.ts",
+        "hash": "15059245673767361894"
       },
       {
         "file": ".stylelintrc.json",
@@ -191,64 +231,24 @@
         "hash": "8412939421186211182"
       },
       {
-        "file": ".eslintrc.json",
-        "hash": "12633303269698510362"
+        "file": "package-lock.json",
+        "hash": "6350137289316381381"
       },
       {
-        "file": ".vscode/extensions.json",
-        "hash": "17425123947026961272"
-      },
-      {
-        "file": "README.md",
-        "hash": "361435371320641272"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
-      },
-      {
-        "file": "package.json",
-        "hash": "12309230812398890799"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "15716311104958585856"
+        "file": ".prettierrc",
+        "hash": "9655271924123089479"
       },
       {
         "file": "jest.config.ts",
         "hash": "3494843969422251966"
       },
       {
-        "file": "tsconfig.base.json",
-        "hash": "3465054784820201682"
-      },
-      {
-        "file": ".github/workflows/ci.yml",
-        "hash": "2941473567380799605"
-      },
-      {
-        "file": ".husky/pre-commit",
-        "hash": "7722884381018660862"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
       },
       {
         "file": "Dockerfile",
-        "hash": "16934754316002881358"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "6350137289316381381"
-      },
-      {
-        "file": "docker-compose.yml",
-        "hash": "2534964549081124388"
-      },
-      {
-        "file": "apps/task-manager-app/task-manager-e2e/example.spec.ts",
-        "hash": "15059245673767361894"
+        "hash": "17566766678224776738"
       }
     ],
     "projectFileMap": {

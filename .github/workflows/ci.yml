@@ -51,6 +51,10 @@ jobs:
       - name: Install Playwright dependencies
         run: npx playwright install-deps
 
+      # Install Playwright browsers
+      - name: Install Playwright dependencies
+        run: npx playwright install
+
       # Set API-key
       - name: Set Clerk API Key
         run: echo "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=${{ secrets.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY }}" >> $GITHUB_ENV
