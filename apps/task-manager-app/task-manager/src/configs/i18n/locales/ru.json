@@ -1,13 +1,85 @@
 {
-    "signIn": "Войти",
-    "signOut": "Выйти",
-    "active_locale": "Актив",
-    "button_label": "Прочитать больше",
-    "homepage_nav_link_label": "Вернуться назад",
-    "root": {
-      "metadata":{
-        "title": "Планировщик",
-        "description": "Управляй задачами"
+  "signIn": "Войти",
+  "signOut": "Выйти",
+  "active_locale": "Актив",
+  "button_label": "Прочитать больше",
+  "homepage_nav_link_label": "Вернуться назад",
+  "root": {
+    "metadata": {
+      "title": "Планировщик",
+      "description": "Управляй задачами"
+    }
+  },
+  "welcome": {
+    "aboutAppTitle": "Привет! Я твое приложение для планирования",
+    "aboutAppDescription": "Планируй задачи, проекты, жизнь",
+    "createNote": "Создавай заметки",
+    "createTask": "Создавай задачи",
+    "createEvent": "Создавай события"
+  },
+  "dashboard": {
+    "scopeSwither": {
+      "title": "Пространства"
+    }
+  },
+  "createCard": {
+     "title": "Создать карточку"
+  },
+  "createColumn": {
+    "title": "Создать колонку"
+  },
+  "board":{
+    "boardCard": {
+      "deletePopconfirm":{
+       "title": "Удалить эту доску?",
+       "description": "Вы точно хотите удалить эту доску?",
+       "okText": "Да",
+       "cancelText": "Нет"
       }
+    },
+    "createBoard": {
+      "title": "Создать доску",
+      "form": {
+        "labels": {
+          "name": "Заголовок доски",
+          "backgroundLink": "Ссылка на картинку заднего фона"
+        },
+        "placeholders": {
+          "name": "Пример доски",
+          "backgroundLink": "http://example-background-image/test.jpg"
+        }
+      },
+      "buttons":{
+        "confirm": "Создать",
+        "cancel": "Отменить"
+      }
+    },
+    "boardInfo": {
+      "buttons": {
+        "submit": "Подтвердить"
+      },
+      "labels": {
+        "name": "Имя",
+        "background": "Обои"
+      },
+      "changeInfoTitle": "Изменить информацию о доске"
+    }
+  },
+  "column": {
+    "deletePopconfirm":{
+     "title": "Удалить эту колонку?",
+     "description": "Вы точно хотите удалить эту колонку?",
+     "okText": "Да",
+     "cancelText": "Нет"
+    }
+  },
+  "card": {
+     "description":{
+       "title": "Описание"
+     },
+     "created": "Дата создания {date}",
+     "buttons": {
+       "archive": "Архивировать"
+     }
   }
-  }
+}

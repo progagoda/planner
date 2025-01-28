@@ -1,5 +1,6 @@
 import { z } from "zod";
 
+//TODO DELETE THIS CODE
 const privateConfigSchema = z.object({ 
     GITHUB_ID: z.string().optional(),
     GITHUB_SECRET: z.string().optional(),

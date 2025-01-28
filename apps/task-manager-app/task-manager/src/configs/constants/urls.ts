@@ -1,0 +1,6 @@
+export const welcomePageURL = '/welcome'
+export const homePageURL = '/'
+export const signInURL = '/sign-in'
+export const signUpURL = '/sign-up'
+export const dashboardPageURL = '/dashboard'
+export const createScopeURL = '/create-scope'

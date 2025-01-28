@@ -1,1 +1,1 @@
-export {Title,Typography} from './Typography'
+export {Title, Typography, Text, SecondaryText} from './Typography'

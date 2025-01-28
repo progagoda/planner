@@ -9,7 +9,7 @@ button {
   background: ${backgroundColor};
   color: ${textColor};
 }
-.ant-modal-title{
+.ant-modal-title {
   background: ${backgroundColor};
   color: red;
 }

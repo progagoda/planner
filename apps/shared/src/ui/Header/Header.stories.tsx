@@ -7,6 +7,9 @@ import { Header } from './Header';
 
 const meta: Meta<typeof Header> = {
     component: Header,
+    args: {
+        style: {width: '100%'},
+    },
     decorators: [
         (Story) => (
             <Flex align='center' justify='center'>
