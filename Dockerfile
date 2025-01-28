@@ -1,7 +1,7 @@
 FROM node:18.17.0-alpine AS builder
 WORKDIR /app
 COPY /package.json ./
-RUN npm ci
+RUN npm ci --ignore-scripts
 COPY ./apps ./apps
 RUN npx nx reset && npm run build
 
