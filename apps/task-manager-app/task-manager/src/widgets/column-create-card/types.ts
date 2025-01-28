@@ -1,4 +1,4 @@
 import { TColumn } from "@/entities";
 
 export type TApiColumnCreate = TColumn
-export type TCreateColumnArgs = Omit<TColumn, 'id'>
+export type TCreateColumnArgs = Omit<TColumn, 'id' | 'positionIndex'> & Partial<Pick<TColumn, 'positionIndex'>>
