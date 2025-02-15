@@ -8,10 +8,10 @@ export const CreateBoardForm = () => {
 
     return (
         <>
-            <FormItem name='name' label={t('labels.name')}> 
+            <FormItem name='name' label={t('labels.name')} required> 
                 <FormInput placeholder={t('placeholders.name')}/>
             </FormItem>
-            <FormItem name='background' label={t('labels.backgroundLink')}>
+            <FormItem name='background' label={t('labels.backgroundLink')} required>
                 <FormInput placeholder={t('placeholders.backgroundLink')}/>
             </FormItem>
         </>

@@ -15,7 +15,7 @@ export const ScopeSwitcher = () => {
         <Flex vertical
             style={{width:"20%"}}>
             <Flex style={{margin:'1vh'}}justify="space-between">
-                <Text strong>{t('title')}</Text>
+                <Text data-testid='scopes' strong> {t('title')}</Text>
                 <PlusOutlined onClick={()=>router.push(createScopeURL)} style={prepareIconProps('15px')}/>
             </Flex>
             <ScopeList/>

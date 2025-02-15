@@ -11,7 +11,7 @@ import { useCreateBoardMutation, useGetBoard } from "./api"
 
 export const BoardSwitcher = () => {
     const t = useTranslations('dashboard.boardSwitcher')
-    const createBoardT = useTranslations('createBoard')
+    const createBoardT = useTranslations('board.createBoard')
 
     const {data: boards, isLoading} = useGetBoard();
     const {createBoard, isLoading: isLoadingCreateBoard} = useCreateBoardMutation();
@@ -26,7 +26,7 @@ export const BoardSwitcher = () => {
 
     const renderCreateButton = () => (
         <Flex>
-            <Button key='create-board' onClick={()=>setIsOpenCreateModal(true)}>{createBoardT('title')}</Button>
+            <Button key='create-board' data-testid = 'create-board-button' onClick={()=>setIsOpenCreateModal(true)}>{createBoardT('title')}</Button>
         </Flex>
     )
 

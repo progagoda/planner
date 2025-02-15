@@ -8,9 +8,13 @@
         "metadata": {
           "targetGroups": {
             "E2E (CI)": [
+              "e2e-ci--../task-manager-e2e/board_crud.spec.ts",
               "e2e-ci--../task-manager-e2e/example.spec.ts",
+              "e2e-ci--../task-manager-e2e/login.spec.ts",
               "e2e-ci",
+              "e2e-ci--../task-manager-e2e/board_crud.spec.ts",
               "e2e-ci--../task-manager-e2e/example.spec.ts",
+              "e2e-ci--../task-manager-e2e/login.spec.ts",
               "e2e-ci"
             ]
           }
@@ -53,6 +57,44 @@
             "executor": "nx:run-commands",
             "configurations": {}
           },
+          "e2e-ci--../task-manager-e2e/board_crud.spec.ts": {
+            "parallelism": false,
+            "metadata": {
+              "technologies": [
+                "playwright",
+                "playwright"
+              ],
+              "description": "Runs Playwright Tests in ../task-manager-e2e/board_crud.spec.ts in CI",
+              "help": {
+                "command": "npx playwright test --help",
+                "example": {
+                  "options": {
+                    "workers": 1
+                  }
+                }
+              }
+            },
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production",
+              {
+                "externalDependencies": [
+                  "@playwright/test"
+                ]
+              }
+            ],
+            "outputs": [
+              "{workspaceRoot}/dist/.playwright/apps/task-manager-app/task-manager/playwright-report",
+              "{workspaceRoot}/dist/.playwright/apps/task-manager-app/task-manager/test-output"
+            ],
+            "executor": "nx:run-commands",
+            "options": {
+              "cwd": "apps/task-manager-app/task-manager",
+              "command": "playwright test ../task-manager-e2e/board_crud.spec.ts"
+            },
+            "configurations": {}
+          },
           "e2e-ci--../task-manager-e2e/example.spec.ts": {
             "parallelism": false,
             "metadata": {
@@ -91,6 +133,44 @@
             },
             "configurations": {}
           },
+          "e2e-ci--../task-manager-e2e/login.spec.ts": {
+            "parallelism": false,
+            "metadata": {
+              "technologies": [
+                "playwright",
+                "playwright"
+              ],
+              "description": "Runs Playwright Tests in ../task-manager-e2e/login.spec.ts in CI",
+              "help": {
+                "command": "npx playwright test --help",
+                "example": {
+                  "options": {
+                    "workers": 1
+                  }
+                }
+              }
+            },
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production",
+              {
+                "externalDependencies": [
+                  "@playwright/test"
+                ]
+              }
+            ],
+            "outputs": [
+              "{workspaceRoot}/dist/.playwright/apps/task-manager-app/task-manager/playwright-report",
+              "{workspaceRoot}/dist/.playwright/apps/task-manager-app/task-manager/test-output"
+            ],
+            "executor": "nx:run-commands",
+            "options": {
+              "cwd": "apps/task-manager-app/task-manager",
+              "command": "playwright test ../task-manager-e2e/login.spec.ts"
+            },
+            "configurations": {}
+          },
           "e2e-ci": {
             "executor": "nx:noop",
             "cache": true,
@@ -109,7 +189,17 @@
             ],
             "dependsOn": [
               {
+                "target": "e2e-ci--../task-manager-e2e/board_crud.spec.ts",
+                "projects": "self",
+                "params": "forward"
+              },
+              {
                 "target": "e2e-ci--../task-manager-e2e/example.spec.ts",
+                "projects": "self",
+                "params": "forward"
+              },
+              {
+                "target": "e2e-ci--../task-manager-e2e/login.spec.ts",
                 "projects": "self",
                 "params": "forward"
               }
