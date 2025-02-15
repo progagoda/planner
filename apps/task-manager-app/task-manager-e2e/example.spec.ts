@@ -9,11 +9,11 @@ test('render logo', async ({ page }) => {
   expect(actualText).toBe("PLANNER");
 });
 
-test('change language', async ({ page }) => {
+test('change language', async ({ page, context }) => {
   await page.goto('/');
+  context.clearCookies();
   await page.getByTestId('lang-switcher').click();
   await page.waitForSelector('[data-testid="lang-switcher"]:has-text("ru")', { timeout: 5000 });
   await page.getByTestId('lang-switcher').click();
   await expect(page.getByTestId('lang-switcher')).toContainText('en');
   });
-
